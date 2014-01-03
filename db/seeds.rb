@@ -1,7 +1,37 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# -*- coding: utf-8 -*-
+pages = [
+         ['Services', 'services','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia eget justo at malesuada. Ut in magna eu enim iaculis lobortis. Cras ut metus fringilla, condimentum ante at, commodo odio. Cras molestie fringilla mi, porta faucibus neque malesuada sed. Duis ac mauris quis neque vestibulum ultricies cursus vel est. Mauris mi sapien, tempus ut quam vel, laoreet vulputate turpis. Proin a porta dui. Maecenas posuere risus in interdum tempus. Mauris felis ante, vehicula nec lacinia sagittis, placerat a tortor. In elementum eu felis ac dapibus. Suspendisse porttitor non quam id faucibus.
+
+Donec sagittis consectetur metus, eu pharetra urna pellentesque sit amet. Donec nec lectus sem. Sed a feugiat nisl. Sed dapibus imperdiet tortor at faucibus. Vivamus ut massa vel magna dignissim pulvinar eget vehicula ante. Proin consequat tincidunt nibh id fermentum. Cras a urna in sapien pellentesque pulvinar sollicitudin eu nisl. Pellentesque non tempor lacus. Praesent a facilisis leo. Sed nulla leo, tristique ac odio non, consequat commodo tortor. Fusce mi est, eleifend ac pretium eu, tempus sed odio. Integer sagittis condimentum rutrum. Aliquam a lorem a felis pretium euismod.
+
+Cras semper luctus auctor. Proin vel orci ut augue pretium dictum. Aenean in dictum erat. Curabitur urna enim, egestas nec dui quis, suscipit tincidunt turpis. Vivamus semper sapien et neque euismod, in fermentum ante lacinia. Nulla facilisi. Ut at tortor id orci eleifend adipiscing pellentesque eget nulla. Morbi sit amet facilisis erat. Praesent eleifend, eros eu tincidunt faucibus, nibh nulla commodo massa, sit amet ornare mi ante ac lorem. Mauris vel interdum ante. Morbi eu risus lectus. Vivamus varius eros ac venenatis pulvinar. Vivamus sed lacinia tellus, nec lobortis velit.
+
+In eget pharetra metus, vel mollis massa. Suspendisse vestibulum risus nec libero semper rutrum. Vestibulum vitae venenatis nunc. Nunc at nunc a metus ullamcorper faucibus. Sed a volutpat ipsum. Nulla a faucibus eros, eget sagittis purus. Vestibulum porttitor felis eget urna faucibus porta. Aliquam erat volutpat. Integer luctus, nisi id rhoncus lobortis, est metus fringilla lacus, et vulputate odio velit vitae nisl.
+
+Duis dictum augue eget leo iaculis, non vulputate quam laoreet. Quisque condimentum gravida odio. Donec facilisis nisi ut turpis eleifend, vel consequat velit mattis. Maecenas turpis magna, vestibulum et ante in, fringilla feugiat massa. Fusce sollicitudin metus et nisl posuere, vitae pretium felis tristique. Donec at diam a leo varius consectetur a scelerisque dui. In non urna eu mi egestas bibendum.'],
+         ['Work', 'work','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia eget justo at malesuada. Ut in magna eu enim iaculis lobortis. Cras ut metus fringilla, condimentum ante at, commodo odio. Cras molestie fringilla mi, porta faucibus neque malesuada sed. Duis ac mauris quis neque vestibulum ultricies cursus vel est. Mauris mi sapien, tempus ut quam vel, laoreet vulputate turpis. Proin a porta dui. Maecenas posuere risus in interdum tempus. Mauris felis ante, vehicula nec lacinia sagittis, placerat a tortor. In elementum eu felis ac dapibus. Suspendisse porttitor non quam id faucibus.
+
+Donec sagittis consectetur metus, eu pharetra urna pellentesque sit amet. Donec nec lectus sem. Sed a feugiat nisl. Sed dapibus imperdiet tortor at faucibus. Vivamus ut massa vel magna dignissim pulvinar eget vehicula ante. Proin consequat tincidunt nibh id fermentum. Cras a urna in sapien pellentesque pulvinar sollicitudin eu nisl. Pellentesque non tempor lacus. Praesent a facilisis leo. Sed nulla leo, tristique ac odio non, consequat commodo tortor. Fusce mi est, eleifend ac pretium eu, tempus sed odio. Integer sagittis condimentum rutrum. Aliquam a lorem a felis pretium euismod.
+
+Cras semper luctus auctor. Proin vel orci ut augue pretium dictum. Aenean in dictum erat. Curabitur urna enim, egestas nec dui quis, suscipit tincidunt turpis. Vivamus semper sapien et neque euismod, in fermentum ante lacinia. Nulla facilisi. Ut at tortor id orci eleifend adipiscing pellentesque eget nulla. Morbi sit amet facilisis erat. Praesent eleifend, eros eu tincidunt faucibus, nibh nulla commodo massa, sit amet ornare mi ante ac lorem. Mauris vel interdum ante. Morbi eu risus lectus. Vivamus varius eros ac venenatis pulvinar. Vivamus sed lacinia tellus, nec lobortis velit.
+
+In eget pharetra metus, vel mollis massa. Suspendisse vestibulum risus nec libero semper rutrum. Vestibulum vitae venenatis nunc. Nunc at nunc a metus ullamcorper faucibus. Sed a volutpat ipsum. Nulla a faucibus eros, eget sagittis purus. Vestibulum porttitor felis eget urna faucibus porta. Aliquam erat volutpat. Integer luctus, nisi id rhoncus lobortis, est metus fringilla lacus, et vulputate odio velit vitae nisl.
+
+Duis dictum augue eget leo iaculis, non vulputate quam laoreet. Quisque condimentum gravida odio. Donec facilisis nisi ut turpis eleifend, vel consequat velit mattis. Maecenas turpis magna, vestibulum et ante in, fringilla feugiat massa. Fusce sollicitudin metus et nisl posuere, vitae pretium felis tristique. Donec at diam a leo varius consectetur a scelerisque dui. In non urna eu mi egestas bibendum.'],
+         ['Tools', 'tools','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia eget justo at malesuada. Ut in magna eu enim iaculis lobortis. Cras ut metus fringilla, condimentum ante at, commodo odio. Cras molestie fringilla mi, porta faucibus neque malesuada sed. Duis ac mauris quis neque vestibulum ultricies cursus vel est. Mauris mi sapien, tempus ut quam vel, laoreet vulputate turpis. Proin a porta dui. Maecenas posuere risus in interdum tempus. Mauris felis ante, vehicula nec lacinia sagittis, placerat a tortor. In elementum eu felis ac dapibus. Suspendisse porttitor non quam id faucibus.
+
+Donec sagittis consectetur metus, eu pharetra urna pellentesque sit amet. Donec nec lectus sem. Sed a feugiat nisl. Sed dapibus imperdiet tortor at faucibus. Vivamus ut massa vel magna dignissim pulvinar eget vehicula ante. Proin consequat tincidunt nibh id fermentum. Cras a urna in sapien pellentesque pulvinar sollicitudin eu nisl. Pellentesque non tempor lacus. Praesent a facilisis leo. Sed nulla leo, tristique ac odio non, consequat commodo tortor. Fusce mi est, eleifend ac pretium eu, tempus sed odio. Integer sagittis condimentum rutrum. Aliquam a lorem a felis pretium euismod.
+
+Cras semper luctus auctor. Proin vel orci ut augue pretium dictum. Aenean in dictum erat. Curabitur urna enim, egestas nec dui quis, suscipit tincidunt turpis. Vivamus semper sapien et neque euismod, in fermentum ante lacinia. Nulla facilisi. Ut at tortor id orci eleifend adipiscing pellentesque eget nulla. Morbi sit amet facilisis erat. Praesent eleifend, eros eu tincidunt faucibus, nibh nulla commodo massa, sit amet ornare mi ante ac lorem. Mauris vel interdum ante. Morbi eu risus lectus. Vivamus varius eros ac venenatis pulvinar. Vivamus sed lacinia tellus, nec lobortis velit.
+
+In eget pharetra metus, vel mollis massa. Suspendisse vestibulum risus nec libero semper rutrum. Vestibulum vitae venenatis nunc. Nunc at nunc a metus ullamcorper faucibus. Sed a volutpat ipsum. Nulla a faucibus eros, eget sagittis purus. Vestibulum porttitor felis eget urna faucibus porta. Aliquam erat volutpat. Integer luctus, nisi id rhoncus lobortis, est metus fringilla lacus, et vulputate odio velit vitae nisl.
+
+Duis dictum augue eget leo iaculis, non vulputate quam laoreet. Quisque condimentum gravida odio. Donec facilisis nisi ut turpis eleifend, vel consequat velit mattis. Maecenas turpis magna, vestibulum et ante in, fringilla feugiat massa. Fusce sollicitudin metus et nisl posuere, vitae pretium felis tristique. Donec at diam a leo varius consectetur a scelerisque dui. In non urna eu mi egestas bibendum.']
+        ]
+
+pages.each do |page|
+  Page.find_or_create_by_name(
+                               :name => page[0],
+                               :permalink => page[1],
+                               :content => page[2],)
+end
