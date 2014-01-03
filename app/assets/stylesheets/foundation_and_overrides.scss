@@ -3,7 +3,7 @@
 //
 
 // Uncomment to use rem-calc() in your settings
-// @import "foundation/functions";
+@import "foundation/functions";
 
 // $experimental: true;
 
@@ -13,13 +13,22 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-// $base-font-size: 100%;
+$base-font-size: 100%;
 
 // The $base-line-height is 100% while $base-font-size is 150%
-// $base-line-height: 150%;
+$base-line-height: 150%;
 
 // This is the default html and body font-size for the base rem value.
-// $rem-base: 16px;
+$rem-base: 16px;
+
+// We use these to control header font sizes
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(37);
+$h3-font-size: rem-calc(27);
+$h4-font-size: rem-calc(23);
+$h5-font-size: rem-calc(18);
+$h6-font-size: 1rem;
+
 
 // We use this to control whether or not CSS classes come through in the gem files.
 // $include-html-classes: true;
@@ -30,7 +39,7 @@
 
 // $include-html-grid-classes: $include-html-classes;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1000);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -931,14 +940,14 @@
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 55px;
 // $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-weight: bold;
+$topbar-title-font-size: rem-calc(20);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
@@ -991,3 +1000,29 @@
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 @import 'foundation';
+
+
+
+#logo {
+   font-family: 'Dejavu Sans Mono';
+}
+#hero {
+   text-align: center;
+   h1 {
+      font-size: rem-calc(44);
+      font-family: 'Dejavu Sans Mono';
+   }
+   span {
+      color: #FF0000;
+   }
+}
+@media only screen and (min-width: 40.063em) {
+   #hero h1 {
+      font-size: rem-calc(55);
+   }
+ }
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+   #hero h1 {
+      font-size: rem-calc(64);
+   }
+ } 
