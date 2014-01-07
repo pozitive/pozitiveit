@@ -1,0 +1,19 @@
+%footer.bg
+  %hr
+  .row
+    .small-6.medium-3.columns
+      %p <strong>Phone:</strong>
+      %ul.no-bullet
+        %li +7 499 705 2573
+        %li +44 20 3519 3273
+    .small-6.medium-3.columns
+      %p <strong>Email:</strong>
+      %a{href:"mailto:box@pozitive.biz"} box@pozitive.biz
+    .medium-6.columns
+      .links
+        %nav.inline-list
+          %li
+            = link_to image_tag('logo_it.png',  width: '25'), root_path
+          - Page.all.each do |page|
+            %li= link_to page.name, page
+

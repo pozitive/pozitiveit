@@ -39,7 +39,7 @@ $h6-font-size: 1rem;
 
 // $include-html-grid-classes: $include-html-classes;
 
-$row-width: rem-calc(1000);
+$row-width: rem-calc(1140);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -1002,27 +1002,112 @@ $topbar-title-font-size: rem-calc(20);
 @import 'foundation';
 
 
-
+// Application styles
+.wlc {
+    margin: rem-calc(100) auto rem-calc(100);
+}
+.bg {
+    background: #F4F6F8;
+}
 #logo {
-   font-family: 'Dejavu Sans Mono';
+    font-family: 'Dejavu Sans Mono';
 }
 #hero {
-   text-align: center;
-   h1 {
-      font-size: rem-calc(44);
-      font-family: 'Dejavu Sans Mono';
-   }
-   span {
-      color: #FF0000;
-   }
+    text-align: center;
+}
+h1.slogan {
+    text-align: center;
+    font-size: rem-calc(44);
+    font-family: 'Dejavu Sans Mono';
+    span {
+	color: #FF0000;
+    }
+}
+hr {}
+.supporticons {
+    text-align: center;
+    img {
+	max-height: 100px;
+	padding: rem-calc(20);
+    }
+    
+}
+.hireus {
+    text-align: center;
+    a {
+	padding: rem-calc(20) rem-calc(100);
+    }
+}
+#tools {
+    text-align: center;
+    vertical-align: bottom;
+    img {
+	max-height: 80px;
+	vertical-align: bottom;
+    }
+    h1 {
+	margin-bottom: rem-calc(40);
+    }	
+}
+
+
+@media only screen { 
+    footer {
+	nav {
+	    float: none;
+	}
+	.links {
+	    margin-top: rem-calc(40);
+	    border-top: 1px solid #DFDFDF;
+	    padding-top: rem-calc(20);
+	    text-align: center;
+	}
+    }
 }
 @media only screen and (min-width: 40.063em) {
-   #hero h1 {
-      font-size: rem-calc(55);
-   }
- }
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-   #hero h1 {
-      font-size: rem-calc(64);
-   }
- } 
+    h1.slogan {
+	font-size: rem-calc(55);
+    }
+    footer {
+	nav {
+	    float: right;
+	}
+	.links {
+	    margin-top: 0;
+	    border-top: none;
+	    padding-top: 0;
+	    text-align: right;
+	}
+    }
+    .supporticons {
+	text-align: center;
+	img {
+	    max-height: 150px;
+	    padding: rem-calc(20);
+	}
+	
+    }
+    #tools {
+	img {
+	    max-height: 100px;
+	}
+    }
+}
+@media only screen and (min-width: 90.063em) {
+    h1.slogan {
+	font-size: rem-calc(64);
+    }
+    .supporticons {
+	text-align: center;
+	img {
+	    max-height: 200px;
+	    padding: rem-calc(20);
+	}
+	
+    }
+    #tools {
+	img {
+	    max-height: 120px;
+	}
+    }
+} 

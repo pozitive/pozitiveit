@@ -1,0 +1,5 @@
+  %section#hero.row
+    .columns
+      = image_tag("soz.jpg")
+      %h1.slogan The best way to create <span>IT</span>
+  %hr

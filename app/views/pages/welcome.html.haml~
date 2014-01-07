@@ -1,0 +1,33 @@
+- content_for :hero do
+  %section#hero.row
+    .columns
+      = image_tag("soz.jpg")
+      %h1 The best way to create <span>IT</span>
+  %hr
+
+- content_for :promo do
+  %section#promo
+    .row
+      %article.large-4.columns
+        .panel
+          %h3 Ruby on Rails Development
+          %p In eget pharetra metus, vel mollis massa. Suspendisse vestibulum risus nec libero semper rutrum. Vestibulum vitae venenatis nunc. Nunc at nunc a metus ullamcorper faucibus. Sed a volutpat ipsum. Nulla a faucibus eros, eget sagittis purus. Vestibulum porttitor felis eget urna faucibus porta. Aliquam erat volutpat. Integer luctus, nisi id rhoncus lobortis, est metus fringilla lacus, et vulputate odio velit vitae nisl.
+      %article.large-4.columns
+        .panel
+          %h3 Representative design
+          %p Donec sagittis consectetur metus, eu pharetra urna pellentesque sit amet. Donec nec lectus sem. Sed a feugiat nisl. Sed dapibus imperdiet tortor at faucibus. Vivamus ut massa vel magna dignissim pulvinar eget vehicula ante. Proin consequat tincidunt nibh id fermentum. Cras a urna in sapien pellentesque pulvinar sollicitudin eu nisl. Pellentesque non tempor lacus. Praesent a facilisis leo. Sed nulla leo, tristique ac odio non, consequat commodo tortor.
+      %article.large-4.columns
+        .panel
+          %h3 International SEO
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacinia eget justo at malesuada. Ut in magna eu enim iaculis lobortis. Cras ut metus fringilla, condimentum ante at, commodo odio. Cras molestie fringilla mi, porta faucibus neque malesuada sed. Duis ac mauris quis neque vestibulum ultricies cursus vel est. Mauris mi sapien, tempus ut quam vel, laoreet vulputate turpis. Proin a porta dui. Maecenas posuere risus in interdum tempus. Mauris felis ante, vehicula nec.
+    %hr
+
+
+%p
+  Mauris tellus tellus, facilisis ut volutpat a, auctor vitae velit. Curabitur mattis purus quis fringilla blandit. Donec vehicula lacus at quam lacinia dictum. Etiam vel sagittis dolor. Sed vulputate quis leo a venenatis. Nunc ut mattis neque, sit amet dignissim augue. In ullamcorper at nisi in sodales. Sed pharetra nisl vel eros imperdiet auctor. Etiam at fermentum tortor. Sed sit amet fringilla felis. Praesent consequat nulla eu arcu euismod, euismod rhoncus risus aliquet.
+%p
+  Phasellus vehicula tellus id sapien faucibus aliquet. Proin vel faucibus lorem, posuere ornare magna. Nunc condimentum ante vel varius varius. Phasellus purus velit, mattis facilisis erat id, semper pharetra justo. Aenean fermentum enim ut dolor posuere porta. Morbi at ullamcorper enim. Nullam convallis mattis faucibus. Sed condimentum nisi nec neque faucibus dapibus. Sed lobortis tempor laoreet. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut tempus, lacus non fermentum consectetur, orci purus sodales tellus, in laoreet diam massa at lectus. Nam pharetra aliquet vehicula. Etiam lacus lorem, scelerisque posuere turpis id, elementum posuere libero. Sed eu consectetur sapien, id porttitor lacus. Nam iaculis sodales diam nec elementum.
+%p
+  Nunc fermentum orci vitae lacus posuere, ut bibendum dui accumsan. Sed in gravida mi, vitae pharetra justo. Morbi quis commodo turpis. Nunc venenatis, augue in scelerisque tempus, eros lectus malesuada est, eget aliquam ante magna eget lectus. Donec fermentum nisl non sodales mattis. Donec vehicula lectus quis pulvinar laoreet. Vivamus elit turpis, varius non nunc vitae, tincidunt cursus diam. Sed euismod enim non nisi aliquam, nec iaculis ipsum bibendum. Suspendisse ornare, diam sed gravida malesuada, elit odio euismod est, vitae mattis massa nunc non purus. Vivamus eget venenatis massa. Cras odio libero, tincidunt id felis nec, ornare bibendum odio.
+%p
+  Duis ac dui ut mauris feugiat hendrerit. Sed justo ante, convallis sit amet mauris eget, convallis sollicitudin velit. Duis aliquet orci vitae lacus sodales, ornare lobortis massa auctor. Etiam dolor velit, aliquam non erat non, accumsan auctor orci. Nullam tincidunt magna nec justo luctus molestie. Phasellus id turpis eu nisi adipiscing vulputate. Sed et sapien orci. Mauris aliquet metus id lectus porttitor dapibus eget eget urna. Proin placerat risus risus, sed consectetur nisl elementum vel. Donec vitae sollicitudin mauris, eu mollis dolor.
