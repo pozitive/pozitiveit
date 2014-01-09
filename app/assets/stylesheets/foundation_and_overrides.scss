@@ -1004,7 +1004,7 @@ $topbar-title-font-size: rem-calc(20);
 
 // Application styles
 .wlc {
-    margin: rem-calc(100) auto rem-calc(100);
+    margin: rem-calc(20) auto rem-calc(20);
 }
 .bg {
     background: #F4F6F8;
@@ -1036,6 +1036,7 @@ hr {}
     text-align: center;
     a {
 	padding: rem-calc(20) rem-calc(100);
+	margin: rem-calc(20) auto rem-calc(20);
     }
 }
 #tools {
@@ -1046,7 +1047,7 @@ hr {}
 	vertical-align: bottom;
     }
     h1 {
-	margin-bottom: rem-calc(40);
+
     }	
 }
 
