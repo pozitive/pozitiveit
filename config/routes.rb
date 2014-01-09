@@ -1,7 +1,8 @@
 Pozitive::Application.routes.draw do
-
-  resources :pages
-  root 'pages#welcome'
+  scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
+    resources :pages
+    root to: 'pages#welcome'
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
