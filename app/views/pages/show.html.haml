@@ -1,7 +1,8 @@
 .row
   .columns
     %header
-      %p#notice= notice
+      - if notice.present?
+        %p#notice= notice 
       %h1
         = @page.name
     %article

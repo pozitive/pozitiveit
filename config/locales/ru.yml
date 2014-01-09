@@ -17,6 +17,7 @@ ru:
     tools: "Наши инструменты"
   layouts:
     phone: "Телефон"
+    contact: "Контакты"
 
 
 # Default ru.yml from rails-i18n

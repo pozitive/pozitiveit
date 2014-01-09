@@ -1,6 +1,7 @@
 Pozitive::Application.routes.draw do
   scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
     resources :pages
+    get "articles/contact", to: "pages#contact"
     root to: 'pages#welcome'
   end
   

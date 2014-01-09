@@ -16,7 +16,7 @@ zh-CN:
     tools: "我们的工具"
   layouts:
     phone: "手机"
-
+    contact: '联系我们'
 
 
 # Default ru.yml from rails-i18n

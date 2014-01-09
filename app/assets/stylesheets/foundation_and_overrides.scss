@@ -944,7 +944,7 @@ $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
 
 // Height and margin
 $topbar-height: 55px;
-// $topbar-margin-bottom: 0;
+$topbar-margin-bottom: 20px;
 
 // Control Input height for top bar
 
@@ -1017,6 +1017,9 @@ $topbar-title-font-size: rem-calc(20);
 }
 #hero {
     text-align: center;
+    img {
+
+    }
 }
 h1.slogan {
     text-align: center;
@@ -1059,6 +1062,9 @@ footer {
     .phone {
 	font-weight: bold;
     }
+}
+.center {
+    text-align: center;
 }
 
 @media only screen { 
