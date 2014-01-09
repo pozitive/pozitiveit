@@ -52,3 +52,4 @@ gem 'rails_12factor', group: :production
 gem "haml-rails"
 gem 'compass-rails', github: "Compass/compass-rails"
 gem 'foundation-rails'
+gem 'globalize', '~> 4.0.0.alpha.2'
