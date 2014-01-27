@@ -4,13 +4,16 @@
 - content_for :promo do
   = render "promo"
 
+- content_for :portfolio do
+  = render 'portfolio'
+
 - content_for :hireus do
   = render "hireus"
 
 - content_for :tools do
   = render "tools"
 
-.row.wlc
+.row
   .columns.small-12
     %h2= t('pages.our_work')
     %p= t('pages.our_workcontent')

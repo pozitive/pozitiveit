@@ -1006,14 +1006,11 @@ $topbar-menu-icon-color-toggled: #888;
 
 
 // Application styles
-.shadow {
-
-}
 .top-bar-section .has-form {
     padding-top: 5px;
 }
 main {
-    padding: rem-calc(70) 0 0;
+    padding: rem-calc(70) 0 rem-calc(50);
 }
 
 .wlc {
@@ -1088,39 +1085,66 @@ h1.slogan {
     padding-bottom: 50px;
 }
 
-#promo {
-     padding: 13rem 0 3.125rem;
+.sections {
+    padding: rem-calc(50) 0 rem-calc(60);
 }
-
-hr {}
+// Promo blog
+#promo {
+}
 .supporticons {
     text-align: center;
     img {
-	max-height: 100px;
+	max-height: 125px;
 	padding: rem-calc(20);
     }
     
 }
-.hireus {
-    text-align: center;
-    a {
-	padding: rem-calc(20) rem-calc(100);
-	margin: rem-calc(20) auto rem-calc(20);
+// Portfolio
+.recentwork {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+    .th {
+	overflow: hidden;
     }
-}
-#tools {
-    text-align: center;
-    vertical-align: bottom;
     img {
-	max-height: 80px;
+	margin: 0 3px 3px 0;
+    }
+    img:hover {
+	-webkit-transform: scale(1.2);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms;
+	-moz-transform: scale(2);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 500ms;
+    }
+}    
+// Hire us
+.hireus {
+    background-attachment: fixed;
+    background-color: #9A958F;
+    background-image: url("keyboard.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    padding: rem-calc(100) 0;
+    position: relative;
+    
+    text-align: center;
+}
+.tools {
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+    img {
+	max-height: 8-0px;
 	vertical-align: bottom;
     }
     h1 {
 
     }	
 }
-
-
 footer {
     .phone {
 	font-weight: bold;
@@ -1129,7 +1153,6 @@ footer {
 .center {
     text-align: center;
 }
-
 @media only screen { 
     footer {
 	nav {
@@ -1158,35 +1181,9 @@ footer {
 	    text-align: right;
 	}
     }
-    .supporticons {
-	text-align: center;
-	img {
-	    max-height: 150px;
-	    padding: rem-calc(20);
-	}
-	
-    }
-    #tools {
-	img {
-	    max-height: 100px;
-	}
-    }
 }
 @media only screen and (min-width: 90.063em) {
     h1.slogan {
 	font-size: rem-calc(64);
-    }
-    .supporticons {
-	text-align: center;
-	img {
-	    max-height: 200px;
-	    padding: rem-calc(20);
-	}
-	
-    }
-    #tools {
-	img {
-	    max-height: 120px;
-	}
     }
 } 

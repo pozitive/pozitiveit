@@ -13,10 +13,12 @@
     = render "layouts/topbar"
     = yield :hero
     = yield :promo
+    = yield :portfolio
+    = yield :hireus
     %main#content
       = yield
     = yield :tools
-    = yield :hireus
+
     = render "layouts/footer"
 
     = javascript_include_tag "application"
