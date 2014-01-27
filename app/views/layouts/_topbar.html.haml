@@ -1,14 +1,15 @@
 %header
-  %nav.top-bar{data: {topbar: "", options: "is_hover: false"}}
+  %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
     %ul.title-area
       %li.name
         %h1#logo
-          = link_to ("POZ" + image_tag('logo.png',  width: '50') + "IVE").html_safe, root_path
+          = link_to ("POZ" + image_tag('logo.png',  width: '44') + "IVE").html_safe, root_path
       %li.toggle-topbar.menu-icon
         %a{href: "#"}
           %span Menu
     %section{class: "top-bar-section"}
       %ul{class: "right"}
+        %li.divider"
         %li.has-dropdown
           = link_to "Languages", locale: "en"
           %ul.dropdown
@@ -17,4 +18,8 @@
             %li= link_to "简体中文", locale: "zh-CN"
         - Page.all.each do |page|
           %li= link_to page.name, page
+        %li.divider
         %li= link_to t('layouts.contact'), articles_contact_path
+        %li.divider
+        %li.has-form
+          %a.button.tiny.success.radius Sign In
