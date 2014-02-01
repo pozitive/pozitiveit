@@ -5,12 +5,29 @@
         Recent Works
       %hr
   .row
-    .columns.small-6.large-3.center
-      =link_to image_tag("projects/gzinfo_600.jpg"), root_path, class: "th"
     .columns.small-6.large-3
-      =link_to image_tag("projects/hinkels_600.jpg"), root_path, class: "th"
+      .view
+        %a.thumbnail
+          =image_tag("projects/gzinfo_600.jpg")
+          .overlay
+            %h4 GUANGZHOU INFO
     .columns.small-6.large-3
-      =link_to image_tag("projects/siti_1200.jpg"), root_path, class: "th"
+      .view
+        %a.thumbnail
+          =image_tag("projects/hinkels_600.jpg")
+          .overlay
+            %h4 HINKELS CONSULTING
     .columns.small-6.large-3
-      =link_to image_tag("projects/taiji_600.jpg"), root_path, class: "th"
+      .view
+        %a.thumbnail
+          =image_tag("projects/siti_1200.jpg")
+          .overlay
+            %h4 CITIART COMPANY
+    .columns.small-6.large-3
+      .view
+        %a.thumbnail
+          =image_tag("projects/taiji_600.jpg")
+          .overlay
+            %h4 TAIJI HAINAN
+
 
