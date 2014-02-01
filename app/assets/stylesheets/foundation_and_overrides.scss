@@ -1030,7 +1030,7 @@ main {
 .intro {
     background-attachment: fixed;
     background-color: #9A958F;
-    background-image: url("header-bg.jpg");
+    background-image: image-url("header-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1109,7 +1109,7 @@ h1.slogan {
 	transition: all 0.3s ease-in-out; 
     }
     .overlay {
-	background: url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4C7E8C;
+	background: image-url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4C7E8C;
 	transform: translateX(-300px);
 	opacity: 0.9;
 	transition: all 0.4s ease-in-out; 
@@ -1143,9 +1143,6 @@ h1.slogan {
     border-bottom: 1px solid #E2E2E2;
     border-top: 1px solid #E2E2E2;
     .view {
-	/* background: url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4E808E; */
-	/* background: url("bgimg.jpg") no-repeat scroll center center #FFFFFF; */
-	/* background: url("bgimg.jpg") no-repeat scroll center center #FFFFFF; */
 	cursor: default;
 	float: left;
 	height: 100%;
@@ -1175,7 +1172,7 @@ h1.slogan {
 .hireus {
     background-attachment: fixed;
     background-color: #9A958F;
-    background-image: url("key/key.jpg");
+    background-image: image-url("key/key.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
