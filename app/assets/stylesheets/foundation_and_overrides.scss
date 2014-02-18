@@ -1006,6 +1006,9 @@ $topbar-menu-icon-color-toggled: #888;
 
 
 // Application styles
+html, body {
+    height: 100%;
+}
 .top-bar-section .has-form {
     padding-top: 5px;
 }
@@ -1027,23 +1030,18 @@ main {
     img {
     }
 }
+#intro {
+}
 .intro {
+    height: 100%;
     background-attachment: fixed;
     background-color: #9A958F;
-    background-image: image-url("header-bg.jpg");
+    background-image: image-url("hk/hk4.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: rem-calc(70);
     color: #FFFFFF;
-    padding: rem-calc(100) 0;
-    position: relative;
-    img.key {
-	display: block;
-	height: auto;
-	margin: 0 auto;
-	position: relative;
-	width: 70%;
-    }
     h1,h2, p, a {
 	color: #FFFFFF;
     }
@@ -1099,45 +1097,6 @@ h1.slogan {
     }
 }
 // Portfolio
-
-.thumbnail {
-    overflow: hidden;
-    display: inline-block;
-    line-height: 0;
-    max-width: 100%;
-    img {
-	transition: all 0.3s ease-in-out; 
-    }
-    .overlay {
-	background: image-url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4C7E8C;
-	transform: translateX(-300px);
-	opacity: 0.9;
-	transition: all 0.4s ease-in-out; 
-    }
-    h4 {
-	border-top: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	font-size: rem-calc(14);
-	font-weight: bold;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding-top: rem-calc(15);
-	position: absolute;
-	text-align: center;
-	text-transform: uppercase;
-	top: 54%;
-	width: 70%;
-    }
-
-}
-.thumbnail:hover {
-    img {
-	transform: scale(1.5) rotate(25deg);
-    }
-    .overlay {
-	transform: translateX(0px);
-    }   
-}
 .recentwork {
     background-color: #F6F6F6;
     border-bottom: 1px solid #E2E2E2;
@@ -1159,14 +1118,51 @@ h1.slogan {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	/* height: 100%; */
-	/* left: 0; */
-	/* overflow: hidden; */
-	/* position: absolute; */
-	/* top: 0; */
-	/* width: 100%; */
+    /* height: 100%; */
+    /* left: 0; */
+    /* overflow: hidden; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* width: 100%; */
     }
+    .thumbnail {
+	overflow: hidden;
+	display: inline-block;
+	line-height: 0;
+	max-width: 100%;
+	img {
+	    transition: all 0.3s ease-in-out; 
+	}
+	.overlay {
+	    background: image-url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4C7E8C;
+	    transform: translateX(-300px);
+	    opacity: 0.9;
+	    transition: all 0.4s ease-in-out; 
+	}
+	h4 {
+	    border-top: 1px solid #FFFFFF;
+	    color: #FFFFFF;
+	    font-size: rem-calc(14);
+	    font-weight: bold;
+	    margin-left: 15%;
+	    margin-right: 15%;
+	    padding-top: rem-calc(15);
+	    position: absolute;
+	    text-align: center;
+	    text-transform: uppercase;
+	    top: 54%;
+	    width: 70%;
+	}
 
+    }
+    .thumbnail:hover {
+	img {
+	    transform: scale(1.5) rotate(25deg);
+	}
+	.overlay {
+	    transform: translateX(0px);
+	}   
+    }
 }    
 // Hire us
 .hireus {
@@ -1182,9 +1178,78 @@ h1.slogan {
     
     text-align: center;
 }
-.tools {
+// Team
+#team{}
+.team {
     background-color: #F6F6F6;
     border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
+    img {
+	background-color: #fff;
+    }
+    .view {
+	cursor: default;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin-top: rem-calc(10);
+	max-width: 100%;
+    }
+    .thumbnail {
+	overflow: hidden;
+	display: inline-block;
+	line-height: 0;
+	max-width: 100%;
+	padding: 20px;
+	img {
+	    transition: all 0.5s ease-in-out 0s; 
+	}
+	.overlay {
+	    height: 100%;
+	    left: -100%;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    background-color: #4C7E8C;
+	    opacity: 0;
+	    transition: all 0.5s ease-in-out; 
+	    z-index: 4;
+	    .icon {
+		left: 50%;
+		margin-left: -85px;
+		margin-top: -15px;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 170px;
+		z-index: 6;
+	    }
+	    a {
+		color: #FFF;
+	    }
+	}
+    }
+    .thumbnail:hover {
+	img {}
+	.overlay {
+	    left: 0;
+	    opacity: 0.95;
+	    transform: rotate(360deg);
+	}   
+    }
+    .description  {
+	text-align: center;
+    }
+}
+.circle {
+    border-radius: 50%;
+}
+
+//Tools
+.tools {
+    background-color: #fff;
     border-top: 1px solid #E2E2E2;
     img {
 	max-height: 8-0px;
@@ -1194,6 +1259,14 @@ h1.slogan {
 
     }	
 }
+
+
+
+
+
+
+
+
 footer {
     .phone {
 	font-weight: bold;
