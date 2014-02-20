@@ -1,0 +1,23 @@
+%section.center
+  .row
+    .columns
+      %header
+        - if notice.present?
+          %p#notice= notice 
+        %h1=t('contact.title')
+  .row
+    .columns.large-4
+      %h4 <strong>Speak English</strong>
+      %h4 +44 20 3519 3273
+      %h4
+        %a{href: " mailto:art@pozitive.biz"} art@pozitive.biz
+    .columns.large-4
+      %h4 <strong>中国说话</strong>
+      %h4 +86 186 8888 4692
+      %h4 
+        %a{href: " mailto:china@pozitive.biz"} china@pozitive.biz
+    .columns.large-4
+      %h4 <strong>Говорим на русскому</strong>
+      %h4 +7 499 705 25 73
+      %h4 
+        %a{href: "mailto:box@pozitive.biz"} box@pozitive.biz
