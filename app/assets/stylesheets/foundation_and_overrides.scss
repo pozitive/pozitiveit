@@ -1182,7 +1182,7 @@ h1.slogan {
     background-attachment: fixed;
     background-color: #9A958F;
     background-image: image-url("key/key.jpg");
-    background-position: center center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
@@ -1239,7 +1239,7 @@ h1.slogan {
 		width: 170px;
 		z-index: 6;
 	    }
-	    a {
+	    a, h4, h5 {
 		color: #FFF;
 	    }
 	}
@@ -1253,7 +1253,10 @@ h1.slogan {
 	}   
     }
     .description  {
-	text-align: center;
+	margin:rem-calc(20) 0 0;
+	h3 {
+	    margin:rem-calc(20) 0;
+	}
     }
 }
 .circle {
@@ -1285,13 +1288,14 @@ h1.slogan {
     }
 }
 
-
-
-
-
-
-
+// Contact US
+#contact_form {
+    textarea {
+	min-height: 150px;
+    }
+}
 footer {
+    border-top: 1px solid #E2E2E2;
     .phone {
 	font-weight: bold;
     }
