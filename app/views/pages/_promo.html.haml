@@ -7,13 +7,14 @@
   .row
     %article.medium-4.columns.supporticons
       = image_tag("responsive.svg")
-      %h3= t('pages.blocktitle1')
-      %p= t('pages.blockcontent1')
+      %h3= Page.find_by_permalink('responsive').try(:name)
+      %p= Page.find_by_permalink('responsive').try(:content)
     %article.medium-4.columns.supporticons
       = image_tag("ruby.svg")
-      %h3= t('pages.blocktitle2')
-      %p= t('pages.blockcontent2')
+      %h3= Page.find_by_permalink('ror').name
+      %p= Page.find_by_permalink('ror').content
     %article.medium-4.columns.supporticons
       = image_tag("multilingual.svg")
-      %h3= t('pages.blocktitle3')
-      %p= t('pages.blockcontent3')
+      %h3= Page.find_by_permalink('multilingual-seo').try(:name)
+      %p= Page.find_by_permalink('multilingual-seo').try(:content)
+
