@@ -6,15 +6,8 @@
       %hr
   .row
     %article.medium-4.columns.supporticons
-      = image_tag("responsive.svg")
-      %h3= Page.find_by_permalink('responsive').try(:name)
-      %p= Page.find_by_permalink('responsive').try(:content)
+      = @responsive
     %article.medium-4.columns.supporticons
-      = image_tag("ruby.svg")
-      %h3= Page.find_by_permalink('ror').name
-      %p= Page.find_by_permalink('ror').content
+      = @ror
     %article.medium-4.columns.supporticons
-      = image_tag("multilingual.svg")
-      %h3= Page.find_by_permalink('multilingual-seo').try(:name)
-      %p= Page.find_by_permalink('multilingual-seo').try(:content)
-
+      = @seo

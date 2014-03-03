@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  helper :all
 
   # GET /pages
   # GET /pages.json
@@ -10,6 +11,13 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+
+  end
+  
+  def welcome
+    @responsive = view_context.services_item('responsive')
+    @ror = view_context.services_item('ror')
+    @seo = view_context.services_item('multilingual-seo')
   end
 
   # GET /pages/new

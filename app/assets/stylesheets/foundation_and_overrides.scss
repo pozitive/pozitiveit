@@ -44,11 +44,11 @@ $row-width: rem-calc(1140);
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
+$body-bg: #fff;
+$body-font-color: #222;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
-// $body-font-style: normal;
+$body-font-weight: normal;
+$body-font-style: normal;
 
 $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
@@ -1089,6 +1089,18 @@ h1.slogan {
 }
 // Promo blog
 #promo {
+    article {
+	padding-bottom: rem-calc(20);
+    }
+    .title {
+	
+    }
+    article:hover {
+	background-color: #F6F6F6;
+    }
+    a {
+	color: $body-font-color;
+    }
 }
 .supporticons {
     text-align: center;
@@ -1304,6 +1316,9 @@ footer {
     h1.slogan {
 	font-size: rem-calc(55);
     }
+    #promo h3 {
+	font-size: rem-calc(18);
+    }
     footer {
 	nav {
 	    float: right;
@@ -1316,8 +1331,20 @@ footer {
 	}
     }
 }
+@media only screen and (min-width: 60.063em) {
+    h1.slogan {
+	font-size: rem-calc(64);
+    }
+    #promo h3 {
+	font-size: rem-calc(23);
+    }
+} 
 @media only screen and (min-width: 90.063em) {
     h1.slogan {
 	font-size: rem-calc(64);
     }
+    #promo h3 {
+	font-size: rem-calc(25);
+    }
+
 } 

@@ -17,8 +17,6 @@
               %li= link_to "English", locale: "en"
               %li= link_to "Русский", locale: "ru"
               %li= link_to "简体中文", locale: "zh-CN"
-          - Page.all.each do |page|
-            %li= link_to page.name, page
           %li.divider
           %li= link_to t('layouts.contact'), articles_contact_path
           %li.divider
