@@ -11,4 +11,13 @@ module PagesHelper
     HTML
   end
 
+  def content_item(name)
+    page = Page.find_by_permalink(name)
+    raw <<-HTML
+        <h3>#{page.name}</h3>
+        <p>#{page.content}</p>
+    HTML
+  end
+
+
 end

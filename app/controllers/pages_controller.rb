@@ -11,13 +11,14 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-
   end
   
   def welcome
     @responsive = view_context.services_item('responsive')
     @ror = view_context.services_item('ror')
     @seo = view_context.services_item('multilingual-seo')
+    @work = view_context.content_item('our-work')
+    @process = view_context.content_item('our-process')
   end
 
   # GET /pages/new

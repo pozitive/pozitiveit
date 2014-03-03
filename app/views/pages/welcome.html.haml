@@ -14,11 +14,6 @@
 
 .row
   .columns.small-12
-    %h2= t('pages.our_work')
-    %p= t('pages.our_workcontent')
-  .columns.small-12.medium-6
-    %h2= t('pages.our_team')
-    %p= t('pages.our_teamcontent')
-  .columns.small-12.medium-6
-    %h2= t('pages.our_process')
-    %p= t('pages.our_teamcontent')
+    = @work
+  .columns.small-12
+    = @process
