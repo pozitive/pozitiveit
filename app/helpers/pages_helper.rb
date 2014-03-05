@@ -14,7 +14,7 @@ module PagesHelper
   def content_item(name)
     page = Page.find_by_permalink(name)
     raw <<-HTML
-        <h2>#{page.name}</h2>
+        <h1>#{page.name}</h1>
         <hr>
         #{page.content}
     HTML

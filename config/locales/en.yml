@@ -1,5 +1,11 @@
 # Application
 en:
+  services: 'Services'
+  works: 'Works'
+  process: 'Process'
+  team: 'Team'
+  pricing: 'Pricing'
+  contact: 'Contact'
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'
@@ -16,8 +22,6 @@ We have a proven record of helping great ideas grow into successful businesses.'
     blockcontent3: 'In our days Multilingual SEO has become incredibly important for customs who want to have a global audience. In order to reach a global audience, your website should be in different languages. 
 Multilingual content also improves your website rankings on the Search Engine Results Pages (SERPS).'
     tools: "Our tools"
-  contact:
-    title: 'We would love to speak in your first language'
   layouts:
     phone: "Phone"
     contact: "Contact"

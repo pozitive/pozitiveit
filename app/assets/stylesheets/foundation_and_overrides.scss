@@ -1085,10 +1085,13 @@ h1.slogan {
 }
 
 .sections {
-    padding: rem-calc(50) 0 rem-calc(60);
+    padding: rem-calc(10) 0 rem-calc(100);
+    h1 {
+	padding: rem-calc(70) 0 0;
+    }
 }
 // Promo blog
-#promo {
+#services {
     article {
 	padding-bottom: rem-calc(20);
     }

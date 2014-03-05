@@ -1,5 +1,11 @@
 # Application
 ru:
+  services: 'Услуги'
+  works: 'Работ'
+  process: 'Процесс'
+  team: 'Команда'
+  pricing: 'Цена'
+  contact: 'Контакты'
   pages:
     our_work: 'Наша работа'
     our_team: 'Наша команда'

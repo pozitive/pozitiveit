@@ -12,22 +12,28 @@
         %ul{class: "right"}
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#services"} Services
+            %a{href: "#services"}
+              = t('services')
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#portfolio"} Works
+            %a{href: "#portfolio"} 
+              = t('works')
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#content"} Process
+            %a{href: "#content"}
+              = t('process')
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#team"} Team
+            %a{href: "#team"}
+              = t('team')
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#price"} Pricing
+            %a{href: "#price"}
+              = t('pricing')
           %li.divider
           %li
-            %a{href: "/#{I18n.locale}/#contact_form"} Contact
+            %a{href: "#contact_form"}
+              = t('contact')
           %li.divider
           %li.has-dropdown
             = link_to "Languages", locale: "en"
