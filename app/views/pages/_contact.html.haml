@@ -1,10 +1,17 @@
 %section#contact_form.sections
   .row
     .columns
-      %h1 Keep in touch
+      %h1= t('getresponse')
       %hr
       %p Send us a message <br>We'll get in touch with you as soon as possible. 
-  %form
+  .row
+    .small-5.columns
+      %button.expand.primary{data: {action: "send-message"}} QUICK MESSAGE
+    .small-2.columns.center
+      %h3 OR
+    .small-5.columns
+      %button.basic.expand{data: {action: "jump-project"}} JUMP START PROJECT
+  %form#message
     .row
       .small-12.columns
         %label Name

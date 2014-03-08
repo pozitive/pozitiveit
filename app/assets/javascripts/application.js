@@ -24,3 +24,15 @@ $('a').click(function(){
     }, 500);
     return false;
 });
+
+$('button.basic').on('click', function(e){
+
+    	$('button.primary').removeClass('primary');
+    		$('button.primary').addClass('basic');
+    			$(this).removeClass('basic');
+    $(this).addClass('primary');
+
+	
+});
+
+$('button.primary');

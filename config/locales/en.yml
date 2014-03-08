@@ -1,11 +1,13 @@
 # Application
 en:
-  services: 'Services'
-  works: 'Works'
-  process: 'Process'
-  team: 'Team'
-  pricing: 'Pricing'
-  contact: 'Contact'
+  services: 'SERVICES'
+  works: 'WORKS'
+  process: 'PROCESS'
+  team: 'TEAM'
+  pricing: 'PRICING'
+  contact: 'CONTACT'
+  jumpproject: 'JUMP PROJECT'
+  getresponse: 'Get a response today'
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'

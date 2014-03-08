@@ -1,46 +1,45 @@
-%header
-  .fixed
-    %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
-      %ul.title-area
-        %li.name
-          %h1#logo
-            = link_to ("POZ" + image_tag('logo.png',  width: '44') + "IVE").html_safe, root_path
-        %li.toggle-topbar.menu-icon
-          %a{href: "#"}
-            %span Menu
-      %section{class: "top-bar-section"}
-        %ul{class: "right"}
-          %li.divider
-          %li
-            %a{href: "#services"}
-              = t('services')
-          %li.divider
-          %li
-            %a{href: "#portfolio"} 
-              = t('works')
-          %li.divider
-          %li
-            %a{href: "#content"}
-              = t('process')
-          %li.divider
-          %li
-            %a{href: "#team"}
-              = t('team')
-          %li.divider
-          %li
-            %a{href: "#price"}
-              = t('pricing')
-          %li.divider
-          %li
-            %a{href: "#contact_form"}
-              = t('contact')
-          %li.divider
-          %li.has-dropdown
-            = link_to "Languages", locale: "en"
-            %ul.dropdown
-              %li= link_to "English", locale: "en"
-              %li= link_to "Русский", locale: "ru"
-              %li= link_to "简体中文", locale: "zh-CN"
-          %li.divider
-          %li.has-form
-            %a.button.tiny.success.radius Sign In
+%header.fixed
+  %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
+    %ul.title-area
+      %li.name
+        %h1#logo
+          = link_to ("POZ" + image_tag('logo.png',  width: '44') + "IVE").html_safe, root_path
+      %li.toggle-topbar.menu-icon
+        %a{href: "#"}
+          %span Menu
+    %section{class: "top-bar-section"}
+      %ul{class: "right"}
+        %li.divider
+        %li
+          %a{href: "#services"}
+            = t('services')
+        %li.divider
+        %li
+          %a{href: "#portfolio"} 
+            = t('works')
+        %li.divider
+        %li
+          %a{href: "#content"}
+            = t('process')
+        %li.divider
+        %li
+          %a{href: "#team"}
+            = t('team')
+        %li.divider
+        %li
+          %a{href: "#price"}
+            = t('pricing')
+        %li.divider
+        %li
+          %a{href: "#contact_form"}
+            = t('contact')
+        %li.divider
+        %li.has-dropdown
+          = link_to "LANGUAGES", locale: "en"
+          %ul.dropdown
+            %li= link_to "ENGLISH", locale: "en"
+            %li= link_to "РУССКИЙ", locale: "ru"
+            %li= link_to "简体中文", locale: "zh-CN"
+        %li.divider
+        %li.has-form
+          %a.button.tiny.success.radius= t('jumpproject')
