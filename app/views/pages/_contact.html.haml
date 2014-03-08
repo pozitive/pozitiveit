@@ -3,30 +3,63 @@
     .columns
       %h1= t('getresponse')
       %hr
-      %p Send us a message <br>We'll get in touch with you as soon as possible. 
-  .row
+      %h4 We love hearing about exciting new ideas. Your message will be confidentially sent to the Littlelines Founder, Matt. It'll be placed to the top of the stack and he'll respond to you today. 
+  .row.switchbutton
     .small-5.columns
-      %button.expand.primary{data: {action: "send-message"}} QUICK MESSAGE
+      %button.switch.expand.primary{data: {action: "send-message"}} QUICK MESSAGE
     .small-2.columns.center
       %h3 OR
     .small-5.columns
-      %button.basic.expand{data: {action: "jump-project"}} JUMP START PROJECT
+      %button#bjp.switch.basic.expand{data: {action: "jump-project"}} JUMP START PROJECT
   %form#message
     .row
       .small-12.columns
         %label Name
         %input{type: "text", placeholder: "Your name"}
     .row
-      .small-12.medium-6.columns
+      .small-12.columns
         %label Email
         %input{type: "text", placeholder: "Email address"}
-      .small-12.medium-6.columns
-        %label Phone
-        %input{type: "text", placeholder: "Phone number"}
     .row
       .small-12.columns
         %label Message
         %textarea{placeholder: "Write you message here..."}
+    .row
+      .small-12.columns
+        %a.button.expanded{href: "#"} SEND YOUR MESSAGE
+  %form#jumpproject.hide
+    .row
+      .small-12.medium-6.columns
+        %label Name
+        %input{type: "text", placeholder: "Darin Miller"}
+      .small-12.medium-6.columns
+        %label Phone
+        %input{type: "text", placeholder: "+1 873.732.8241 "}
+    .row
+      .small-12.columns
+        %label Email
+        %input{type: "text", placeholder: "box@pozitive.biz"}
+    .row
+      .small-12.columns
+        %label Company or Organization Name
+        %input{type: "text", placeholder: "Pozitive Company Limited"}
+    .row
+      .small-12.columns
+        %label Describe your project or idea
+        %input{type: "text", placeholder: "My Great Idea"}
+    .row
+      .small-12.columns
+        %label Message
+        %textarea{placeholder: "Write you message here..."}
+    .row
+      .small-12.columns
+        %label Anything else we need to know?
+        %input{type: "text", placeholder: ""}
+    .row
+      .small-12.columns
+        %label Describe your project or idea
+        %input{type: "text", placeholder: "Google search"}
+
     .row
       .small-12.columns
         %a.button.expanded{href: "#"} SEND YOUR MESSAGE

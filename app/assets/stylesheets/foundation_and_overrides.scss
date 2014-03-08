@@ -1297,6 +1297,9 @@ h1.slogan {
 	min-height: 150px;
     }
 }
+.switchbutton {
+    margin: rem-calc(30) auto;
+}
 button.basic {
     background: none ;
     color: $body-font-color;

@@ -25,14 +25,28 @@ $('a').click(function(){
     return false;
 });
 
-$('button.basic').on('click', function(e){
-
-    	$('button.primary').removeClass('primary');
-    		$('button.primary').addClass('basic');
-    			$(this).removeClass('basic');
-    $(this).addClass('primary');
-
-	
+$('button.switch').on('click', function(e){
+    $('button').addClass( 'basic');
+    $( this ).toggleClass( "basic" );
+    var value = $(this).data('action');
+    if (value == 'send-message') { 
+	$('#message').show();
+	$('#jumpproject').hide();
+    } else {
+	$('#message').hide();
+	$('#jumpproject').show();
+    }
+});
+$('.button.switch').on('click', function(e){
+    $('button').addClass( 'basic');
+    $('#bjp').removeClass( 'basic');
+    var value = $(this).data('action');
+    if (value == 'send-message') { 
+	$('#message').show();
+	$('#jumpproject').hide();
+    } else {
+	$('#message').hide();
+	$('#jumpproject').show();
+    }
 });
 
-$('button.primary');
