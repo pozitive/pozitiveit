@@ -13,40 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
-
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
-
-$('button.switch').on('click', function(e){
-    $('button').addClass( 'basic');
-    $( this ).toggleClass( "basic" );
-    var value = $(this).data('action');
-    if (value == 'send-message') { 
-	$('#message').show();
-	$('#jumpproject').hide();
-    } else {
-	$('#message').hide();
-	$('#jumpproject').show();
-    }
-});
-$('.button.switch').on('click', function(e){
-    $('button').addClass( 'basic');
-    $('#bjp').removeClass( 'basic');
-    var value = $(this).data('action');
-    if (value == 'send-message') { 
-	$('#message').show();
-	$('#jumpproject').hide();
-    } else {
-	$('#message').hide();
-	$('#jumpproject').show();
-    }
+$(function() {
+  $(document).foundation();
 });
 

@@ -7,7 +7,6 @@ gem 'uglifier', '>= 1.3.0'   # Javascript compressor
 gem 'coffee-rails', '~> 4.0.0'  # Coffee-script support
 gem 'therubyracer', platforms: :ruby  # Google V8 javascript engine
 gem 'jquery-rails'  # Use jquery as the JavaScript library
-gem 'turbolinks' # Follow links faster
 gem 'jbuilder', '~> 1.2' # Json for declaring
 gem 'rails_12factor', group: :production
 gem "haml-rails"

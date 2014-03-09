@@ -3,7 +3,7 @@
     %ul.title-area
       %li.name
         %h1#logo
-          = link_to ("POZ" + image_tag('logo.png',  width: '44') + "IVE").html_safe, root_path
+          %a{href: "#intro"}= ("POZ" + image_tag('logo.png',  width: '44') + "IVE").html_safe
       %li.toggle-topbar.menu-icon
         %a{href: "#"}
           %span Menu
@@ -15,7 +15,7 @@
             = t('services')
         %li.divider
         %li
-          %a{href: "#portfolio"} 
+          %a{href: "#portfolio", data: { no_turbolink: true }} 
             = t('works')
         %li.divider
         %li
