@@ -3,30 +3,31 @@
     .columns
       %h1= t('getresponse')
       %hr
-      %h4 We love hearing about exciting new ideas. Your message will be confidentially sent to the Littlelines Founder, Matt. It'll be placed to the top of the stack and he'll respond to you today. 
+      %h4 We are happy to hear about new projects. We will respond to your request as quickly as possible.
   .row.switchbutton
     .small-5.columns
-      %button#button-send-message.switch.expand.primary{data: {action: "send-message"}} QUICK MESSAGE
+      %button#button-send-message.switch.expand.primary{data: {action: "send-message"}}= t('message')
     .small-2.columns.center
       %h3 OR
     .small-5.columns
-      %button#button-jump-project.switch.basic.expand{data: {action: "jump-project"}} JUMP START PROJECT
+      %button#button-jump-project.switch.basic.expand{data: {action: "jump-project"}}= t('kickstartproject')
+
   %form#message
     .row
       .small-12.columns
         %label Name
-        %input{type: "text", placeholder: "Your name"}
+        %input{type: "text", placeholder: "Darin Miller"}
     .row
       .small-12.columns
         %label Email
-        %input{type: "text", placeholder: "Email address"}
+        %input{type: "text", placeholder: "box@pozitive.biz"}
     .row
       .small-12.columns
         %label Message
-        %textarea{placeholder: "Write you message here..."}
+        %textarea{placeholder: "Hello guys ..."}
     .row
       .small-12.columns
-        %a.button.expanded{href: "#"} SEND YOUR MESSAGE
+        %a.button.expanded{href: "#"}= t('send')
   %form#jumpproject.hide
     .row
       .small-12.medium-6.columns
@@ -62,5 +63,5 @@
 
     .row
       .small-12.columns
-        %a.button.expanded{href: "#"} SEND YOUR MESSAGE
+        %a.button.expanded{href: "#"}= t('request')
     

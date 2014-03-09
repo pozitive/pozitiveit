@@ -6,8 +6,12 @@ en:
   team: 'TEAM'
   pricing: 'PRICING'
   contact: 'CONTACT'
-  jumpproject: 'JUMP PROJECT'
+  jumpproject: 'KICK START'
+  kickstartproject: 'KICK START'
   getresponse: 'Get a response today'
+  message: 'MESSAGE'
+  send: 'SEND'
+  request: 'REQUEST'
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'

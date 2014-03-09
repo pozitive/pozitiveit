@@ -19,3 +19,24 @@ $(function() {
   $(document).foundation();
 });
 
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+$('.switch').on('click', function(e){
+    var value = $(this).data('action');
+    if (value == 'send-message') { 
+	$('#button-jump-project').addClass( 'basic');
+	$('#button-send-message').removeClass( 'basic');
+	$('#message').show();
+	$('#jumpproject').hide();
+    } else {
+	$('#button-jump-project').removeClass( 'basic');
+	$('#button-send-message').addClass( 'basic');
+	$('#message').hide();
+	$('#jumpproject').show();
+    }
+});
