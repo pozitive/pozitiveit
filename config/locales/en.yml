@@ -22,8 +22,12 @@ en:
     type: 'Type'
     send: 'SEND'
     request: 'REQUEST'
-
-
+  price:
+    mobile: Mobile Friendly
+    singlepage: Single-page Application
+    multilingual: Multilingual Website
+    support: Professional Support / Hosting
+    interactive: Interactive Website
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'

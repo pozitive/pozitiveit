@@ -1,16 +1,21 @@
 %footer.bg.sections
   .row
-    .small-6.medium-3.columns
+    .small-12.medium-8.columns
       %p.phone= t('layouts.phone')
-      %ul.no-bullet
+      %ul.inline-list
         %li +7 499 705 2573
         %li +44 20 3519 3273
-    .small-6.medium-3.columns
+    .small-12.medium-4.columns
+      .links.right
+        %nav.inline-list
+          %li.name
+            %h5#logo
+              = ("POZ" + image_tag('logo_50.png') + "IVE").html_safe
+  .row
+    .small-12.columns
       %p <strong>Email:</strong>
       %p
         %a{href:"mailto:box@pozitive.biz"} box@pozitive.biz
-    .medium-6.columns
-      .links
-        %nav.inline-list
-          %li
-            = link_to image_tag('logo_it.png',  width: '25'), root_path
+  .row
+    .small-12.columns
+      %p.center Established 2007 <span class="copyleft"> © </span>

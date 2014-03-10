@@ -1022,6 +1022,8 @@ main {
 $color-bg: #F4F6F8;
 .bg {
     background: $color-bg;
+    border-bottom: 1px solid #E2E2E2;
+    border-top: 1px solid #E2E2E2;
 }
 #logo {
     font-family: 'Dejavu Sans Mono';
@@ -1197,9 +1199,6 @@ h1.slogan {
 // Team
 #team{}
 .team {
-    background-color: #F6F6F6;
-    border-bottom: 1px solid #E2E2E2;
-    border-top: 1px solid #E2E2E2;
     img {
 	background-color: #fff;
     }
@@ -1308,27 +1307,35 @@ button.basic {
 	color: $primary-color;
     }
 }
+footer.sections {
+    padding: rem-calc(70) 0 rem-calc(100);
+}
+
 footer {
-    border-top: 1px solid #E2E2E2;
+    h1, h2, h3, h4, h5, ul, li, p, a {
+    color: lighten($body-font-color, 40%);
+    }
     .phone {
 	font-weight: bold;
     }
+    img {
+	opacity: 0.6;
+    }
+    img:hover {
+	opacity: 1;
+    }
+}
+.copyleft {
+    -moz-transform: scaleX(-1); 
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1); 
+    transform: scaleX(-1); 
+    display: inline-block;
 }
 .center {
     text-align: center;
 }
 @media only screen { 
-    footer {
-	nav {
-	    float: none;
-	}
-	.links {
-	    margin-top: rem-calc(40);
-	    border-top: 1px solid #DFDFDF;
-	    padding-top: rem-calc(20);
-	    text-align: center;
-	}
-    }
 }
 @media only screen and (min-width: 40.063em) {
     h1.slogan {
@@ -1336,17 +1343,6 @@ footer {
     }
     #promo h3 {
 	font-size: rem-calc(18);
-    }
-    footer {
-	nav {
-	    float: right;
-	}
-	.links {
-	    margin-top: 0;
-	    border-top: none;
-	    padding-top: 0;
-	    text-align: right;
-	}
     }
 }
 @media only screen and (min-width: 60.063em) {
