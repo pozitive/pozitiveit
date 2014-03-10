@@ -28,7 +28,8 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to @message, notice: 'Message was successfully created.' }
+        MessageMailer.contact_form(@message).deliver
+        format.html { redirect_to @message, notice: 'Message was successfully sent.' }
         format.json { render action: 'show', status: :created, location: @message }
       else
         format.html { render action: 'new' }
@@ -42,6 +43,7 @@ class MessagesController < ApplicationController
   def update
     respond_to do |format|
       if @message.update(message_params)
+        MessageMailer.contact_form(@message).deliver
         format.html { redirect_to @message, notice: 'Message was successfully updated.' }
         format.json { head :no_content }
       else

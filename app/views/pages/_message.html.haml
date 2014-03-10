@@ -13,24 +13,24 @@
         = f.text_field :name, {required: '', placeholder: "Darin Miller"}
       #phone.small-12.columns.hide
         %label= t('form.Phone')
-        = f.text_field :phone, {required: '', placeholder: "(408) 434-0000"}
+        = f.text_field :phone, {placeholder: "(408) 434-0000"}
       #email.small-12.columns
         %label= t('form.email')
         = f.text_field :email, {required: '', placeholder: "darinmiller@example.biz"}
       #company.small-12.columns.hide
         %label= t('form.company')
-        = f.text_field :company, {required: '', placeholder: "Write your company name ..."}
+        = f.text_field :company, {placeholder: "Write your company name ..."}
       #idea.small-12.columns.hide
         %label= t('form.idea')
-        = f.text_field :idea, {required: '', placeholder: "Write your idea here ..."}
+        = f.text_field :idea, {placeholder: "Write your idea here ..."}
       #message.small-12.columns
         %label= t('form.message')
         = f.text_area :message, {required: '', placeholder: "Write your message here..."}
       #extra.small-12.columns.hide
         %label= t('form.extra')
-        = f.text_field :extra, {required: '', placeholder: "Additional Information"}
+        = f.text_field :extra, {placeholder: "Additional Information"}
       #type.small-12.columns.hide
         %label= t('form.type')
-        = f.text_field :type, {required: '', placeholder: "Landing Page"}
+        = f.text_field :type, {placeholder: "Landing Page"}
       #send_button.small-12.columns
         = f.submit t('form.send'), class: 'button success'
