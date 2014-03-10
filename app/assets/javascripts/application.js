@@ -46,7 +46,9 @@ var send_message = function(data) {
     }
     switch_button('#' + data);
 }
-
+var type_web = function(type) {
+    $('#message_type').val(type);
+}
 $('a.smooth').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -54,19 +56,13 @@ $('a.smooth').click(function(){
     return false;
 });
 
-// $('#button-kick-project').on('click', function(e){
-//     send_message('button-kick-project');
-// });
-// $('#button-hire-us').on('click', function(e){
-//     send_message('button-hire-us');
-// });
-// $('#button-send-message').on('click', function(e){
-//     send_message('button-send-message');
-// });
 $('.switch').on('click', function(){
     var data = $(this).data('action');
+    var type = $(this).data('type');
     send_message(data);
+    type_web(type);
     console.log(data);
+    console.log(type);
 });
 
 
