@@ -43,7 +43,6 @@ class MessagesController < ApplicationController
   def update
     respond_to do |format|
       if @message.update(message_params)
-        MessageMailer.contact_form(@message).deliver
         format.html { redirect_to @message, notice: 'Message was successfully updated.' }
         format.json { head :no_content }
       else
@@ -71,6 +70,6 @@ class MessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.require(:message).permit(:name, :phone, :email, :company, :idea, :message, :extra, :type)
+      params.require(:message).permit(:name, :phone, :email, :company, :idea, :message, :extra, :type_website)
     end
 end

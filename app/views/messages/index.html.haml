@@ -9,7 +9,7 @@
     %th Idea
     %th Message
     %th Extra
-    %th Type
+    %th Type Website
     %th
     %th
     %th
@@ -23,7 +23,7 @@
       %td= message.idea
       %td= message.message
       %td= message.extra
-      %td= message.type
+      %td= message.type_website
       %td= link_to 'Show', message
       %td= link_to 'Edit', edit_message_path(message)
       %td= link_to 'Destroy', message, :method => :delete, :data => { :confirm => 'Are you sure?' }
