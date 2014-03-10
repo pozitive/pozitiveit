@@ -16,27 +16,57 @@
 //= require_tree .
 
 $(function() {
-  $(document).foundation();
+    $(document).foundation();
 });
 
-$('a').click(function(){
+
+var switch_button = function(button) {
+    $('.switch').addClass( 'basic');
+    $(button).removeClass( 'basic');
+}
+var send_message = function(data) {
+    if (data == 'button-kick-project') {
+	$('#phone').removeClass('hide');
+	$('#company').removeClass('hide');
+	$('#extra').removeClass('hide');
+	$('#idea').removeClass('hide');
+	$('#type').addClass('hide');
+    } else if (data == 'button-hire-us') {
+	$('#phone').removeClass('hide');
+	$('#company').removeClass('hide');
+	$('#extra').addClass('hide');
+	$('#idea').addClass('hide');
+	$('#type').removeClass('hide');
+    } else {
+	$('#phone').addClass('hide');
+	$('#company').addClass('hide');
+	$('#extra').addClass('hide');
+	$('#idea').addClass('hide');
+	$('#type').addClass('hide');
+    }
+    switch_button('#' + data);
+}
+
+$('a.smooth').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     return false;
 });
 
-$('.switch').on('click', function(e){
-    var value = $(this).data('action');
-    if (value == 'send-message') { 
-	$('#button-jump-project').addClass( 'basic');
-	$('#button-send-message').removeClass( 'basic');
-	$('#message').show();
-	$('#jumpproject').hide();
-    } else {
-	$('#button-jump-project').removeClass( 'basic');
-	$('#button-send-message').addClass( 'basic');
-	$('#message').hide();
-	$('#jumpproject').show();
-    }
+// $('#button-kick-project').on('click', function(e){
+//     send_message('button-kick-project');
+// });
+// $('#button-hire-us').on('click', function(e){
+//     send_message('button-hire-us');
+// });
+// $('#button-send-message').on('click', function(e){
+//     send_message('button-send-message');
+// });
+$('.switch').on('click', function(){
+    var data = $(this).data('action');
+    send_message(data);
+    console.log(data);
 });
+
+

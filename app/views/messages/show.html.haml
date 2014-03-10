@@ -1,0 +1,22 @@
+= flash_message.html_safe
+
+%p
+  = @message.name
+%p
+  = @message.phone
+%p
+  = @message.email
+%p
+  = @message.company
+%p
+  = @message.idea
+%p
+  = @message.message
+%p
+  = @message.extra
+%p
+  = @message.type
+
+= link_to 'Edit', edit_message_path(@message)
+\|
+= link_to 'Back', root_path

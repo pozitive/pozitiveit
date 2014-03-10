@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140109101822) do
+ActiveRecord::Schema.define(version: 20140310043530) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: true do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "company"
+    t.string   "idea"
+    t.text     "message"
+    t.string   "extra"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "page_translations", force: true do |t|
     t.integer  "page_id",    null: false

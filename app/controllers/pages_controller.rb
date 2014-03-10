@@ -20,6 +20,7 @@ class PagesController < ApplicationController
     @seo = view_context.services_item('multilingual-seo')
     @work = view_context.content_item('our-work')
     @process = view_context.content_item('our-process')
+    @message = Message.new
   end
 
   # GET /pages/new

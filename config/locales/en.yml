@@ -7,11 +7,23 @@ en:
   pricing: 'PRICING'
   contact: 'CONTACT'
   jumpproject: 'KICK START'
+  message: 'CONTACT US'
+  hireus: 'HIRE US'
   kickstartproject: 'KICK START'
   getresponse: 'Get a response today'
-  message: 'MESSAGE'
-  send: 'SEND'
-  request: 'REQUEST'
+  form:
+    name: 'Name'
+    phone: 'Phone'
+    email: 'Email'
+    company: 'Company'
+    idea: 'Idea'
+    message: 'Message'
+    extra: 'Extra'
+    type: 'Type'
+    send: 'SEND'
+    request: 'REQUEST'
+
+
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'

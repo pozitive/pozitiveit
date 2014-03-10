@@ -5,63 +5,11 @@
       %hr
       %h4 We are happy to hear about new projects. We will respond to your request as quickly as possible.
   .row.switchbutton
-    .small-5.columns
-      %button#button-send-message.switch.expand.primary{data: {action: "send-message"}}= t('message')
-    .small-2.columns.center
-      %h3 OR
-    .small-5.columns
-      %button#button-jump-project.switch.basic.expand{data: {action: "jump-project"}}= t('kickstartproject')
+    .small-4.columns
+      %button#button-send-message.switch.expand.primary{data: {action: "button-send-message"}}= t('message')
+    .small-4.columns
+      %button#button-hire-us.switch.basic.expand{data: {action: "button-hire-us"}}= t('hireus')
+    .small-4.columns
+      %button#button-kick-project.switch.basic.expand{data: {action: "button-kick-project"}}= t('kickstartproject')
 
-  %form#message
-    .row
-      .small-12.columns
-        %label Name
-        %input{type: "text", placeholder: "Darin Miller"}
-    .row
-      .small-12.columns
-        %label Email
-        %input{type: "text", placeholder: "box@pozitive.biz"}
-    .row
-      .small-12.columns
-        %label Message
-        %textarea{placeholder: "Hello guys ..."}
-    .row
-      .small-12.columns
-        %a.button.expanded{href: "#"}= t('send')
-  %form#jumpproject.hide
-    .row
-      .small-12.medium-6.columns
-        %label Name
-        %input{type: "text", placeholder: "Darin Miller"}
-      .small-12.medium-6.columns
-        %label Phone
-        %input{type: "text", placeholder: "+1 873.732.8241 "}
-    .row
-      .small-12.columns
-        %label Email
-        %input{type: "text", placeholder: "box@pozitive.biz"}
-    .row
-      .small-12.columns
-        %label Company or Organization Name
-        %input{type: "text", placeholder: "Pozitive Company Limited"}
-    .row
-      .small-12.columns
-        %label Describe your project or idea
-        %input{type: "text", placeholder: "My Great Idea"}
-    .row
-      .small-12.columns
-        %label Message
-        %textarea{placeholder: "Write you message here..."}
-    .row
-      .small-12.columns
-        %label Anything else we need to know?
-        %input{type: "text", placeholder: ""}
-    .row
-      .small-12.columns
-        %label Describe your project or idea
-        %input{type: "text", placeholder: "Google search"}
-
-    .row
-      .small-12.columns
-        %a.button.expanded{href: "#"}= t('request')
-    
+  = render "message"

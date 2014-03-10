@@ -12,7 +12,9 @@
   %body
     = render "layouts/topbar"
     %main#content
-      = yield
+      .row
+        .columns.small-12
+          = yield
     = render "layouts/footer"
 
     = javascript_include_tag "application"
