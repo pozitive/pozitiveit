@@ -47,7 +47,7 @@ var send_message = function(data) {
     switch_button('#' + data);
 }
 var type_web = function(type) {
-    $('#message_type').val(type);
+    $('#message_type_website').val(type);
 }
 $('a.smooth').click(function(){
     $('html, body').animate({
