@@ -30,7 +30,7 @@
         %label= t('form.extra')
         = f.text_field :extra, {placeholder: "Additional Information"}
       #type.small-12.columns.hide
-        = f.label :type_website
-        = f.text_field :type_website
+        %label= t('form.type')
+        = f.text_field :type_website 
       #send_button.small-12.columns
         = f.submit t('form.send'), class: 'button success'
