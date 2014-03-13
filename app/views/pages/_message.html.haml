@@ -9,14 +9,16 @@
   #message
     .row
       #name.small-12.columns
+        %small Contact us for general inquiries and customer service. If you are interested in developing a project, please use the Kick Start form.
+      #name.small-12.columns
         %label= t('form.name')
-        = f.text_field :name, {required: '', placeholder: "Darin Miller"}
+        = f.text_field :name, {required: '', placeholder: "Your Name here"}
       #phone.small-12.columns.hide
         %label= t('form.Phone')
-        = f.text_field :phone, {placeholder: "(408) 434-0000"}
+        = f.text_field :phone, {placeholder: "(555) 555-5555"}
       #email.small-12.columns
         %label= t('form.email')
-        = f.text_field :email, {required: '', placeholder: "darinmiller@example.biz"}
+        = f.text_field :email, {required: '', placeholder: "Yourname@example.biz"}
       #company.small-12.columns.hide
         %label= t('form.company')
         = f.text_field :company, {placeholder: "Write your company name ..."}
