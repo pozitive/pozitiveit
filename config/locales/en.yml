@@ -1,7 +1,7 @@
 # Application
 en:
   services: 'SERVICES'
-  works: 'WORKS'
+  works: 'SAMPLES'
   process: 'PROCESS'
   team: 'TEAM'
   pricing: 'PRICING'
@@ -10,7 +10,7 @@ en:
   message: 'CONTACT US'
   hireus: 'HIRE US'
   kickstartproject: 'KICK START'
-  getresponse: 'Get a response today'
+  getresponse: 'We look forward to hearing from you!'
   form:
     name: 'Name'
     phone: 'Phone'
