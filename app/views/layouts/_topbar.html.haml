@@ -43,3 +43,7 @@
         %li.divider
         %li.has-form
           %a.button.tiny.success.radius.switch{ data: {action: "button-kick--project"}}= t('jumpproject')
+        = if user_signed_in?
+          %li.divider
+          %li.has-form
+            = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button alert"
