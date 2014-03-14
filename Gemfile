@@ -14,7 +14,7 @@ gem 'compass-rails', github: "Compass/compass-rails"
 gem 'foundation-rails'
 gem 'globalize', '~> 4.0.0.alpha.2'
 gem 'figaro'
-
+gem 'devise'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
