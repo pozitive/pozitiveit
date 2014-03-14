@@ -13,9 +13,32 @@
               = ("POZ" + image_tag('logo_50.png') + "IVE").html_safe
   .row
     .small-12.columns
-      %p <strong>Email:</strong>
+      %p <strong>Email</strong>
       %p
         %a{href:"mailto:box@pozitive.biz"} box@pozitive.biz
+  .row
+    .small-12.columns
+      %p <strong>Menu</strong>
+      %ul.inline-list
+        %li= link_to 'BLOG', pages_path
+        %li
+          %a{href: "/#{I18n.locale}/#services"}
+            = t('services')
+        %li
+          %a{href: "/#{I18n.locale}/#portfolio"}
+            = t('works')
+        %li
+          %a{href: "/#{I18n.locale}/#content"}
+            = t('process')
+        %li
+          %a{href: "/#{I18n.locale}/#team"}
+            = t('team')
+        %li
+          %a{href: "/#{I18n.locale}/#price"}
+            = t('pricing')
+        %li
+          %a{href: "/#{I18n.locale}/#contact_form"}
+            = t('contact')
   .row
     .small-12.columns
       %p.center Established 2007 <span class="copyleft"> © </span>
