@@ -15,6 +15,7 @@ gem 'foundation-rails'
 gem 'globalize', '~> 4.0.0.alpha.2'
 gem 'figaro'
 gem 'devise'
+gem 'truncate_html'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

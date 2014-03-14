@@ -1,23 +1,27 @@
-%h1 Listing pages
+%h1 Blog
+= link_to 'New Blog Page', new_page_path if user_signed_in? 
+%hr
+- @pages.each do |page|
+  %article
+    %header
+      %h3= link_to page.name, page_path(page)
+    %p= truncate_html page.content, length: 500
+    %p= link_to 'Read more', page_path(page), class: 'button tiny'
+    %p= link_to 'Edit', edit_page_path(page) if user_signed_in?
 
-%table
-  %tr
-    %th Name
-    %th Permalink
-    %th Content
-    %th
-    %th
-    %th
+-#     %th
+-#     %th
+-#     %th
 
-  - @pages.each do |page|
-    %tr
-      %td= page.name
-      %td= page.permalink
-      %td= page.content
-      %td= link_to 'Show', page
-      %td= link_to 'Edit', edit_page_path(page)
-      %td= link_to 'Destroy', page, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-#   - @pages.each do |page|
+-#     %tr
+-#       %td= page.name
+-#       %td= page.permalink
+-#       %td= page.content
+-#       %td= link_to 'Show', page
+-#       %td= link_to 'Edit', edit_page_path(page)
+-#       %td= link_to 'Destroy', page, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-%br
+-# %br
 
-= link_to 'New Page', new_page_path
+-# = link_to 'New Page', new_page_path
