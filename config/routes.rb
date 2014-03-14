@@ -4,7 +4,7 @@ Pozitive::Application.routes.draw do
     resources :pages
     resources :messages
     root to: 'pages#welcome'
-
+    devise_for :users
   end
   
   # The priority is based upon order of creation: first created -> highest priority.
