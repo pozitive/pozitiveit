@@ -43,7 +43,4 @@
         %li.divider
         %li.has-form
           %a.button.tiny.success.radius.switch{href: '#contact_form', data: {action: "button-kick-project"}}= t('jumpproject')
-        = if user_signed_in?
-          %li.divider
-          %li.has-form
-            = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius"
+        = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius" if user_signed_in?
