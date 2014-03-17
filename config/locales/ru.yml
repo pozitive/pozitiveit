@@ -1,11 +1,51 @@
 # Application
 ru:
+  home: 'ГЛАВНАЯ'
   services: 'УСЛУГИ'
+  Services: 'Услуги'
   works: 'РАБОТ'
   process: 'ПРОЦЕСС'
   team: 'КОМАНДА'
   pricing: 'ЦЕНА'
   contact: 'КОНТАКТЫ'
+  kickstartproject: 'ЗАПУСК ПРОЕКТА'
+  jumpproject: 'ЗАПУСК ПРОЕКТА'
+  slogandescription: 'Разработка веб-сайтов под ваши нужды'
+  kickstartyourproject: 'ЗАПУСК ВАШЕГО ПРОЕКТА'
+  Recent_Work: 'Последнии работы'
+  # Hire Us
+  hireus: 'НАНЯТЬ НАС'
+  # Team
+  Meet_Our_Team: 'Наша команда'
+  Brett: 'Бретт - литератор:'
+  Alla: 'Алла - дизайнер:'
+  Dima: 'Дмитрий - веб-разработчик:'
+  # Price
+  Website_Pricing: 'Стоимость разработки'
+  order_now: 'Заказать сейчас'
+  # Contact Us
+  getresponse: 'Контакты!'
+  We_respond: 'Мы гаратируем ответ в течении 24 часов'
+  message: 'СВЯЗЬ С НАМИ'
+  form:
+    name: 'Имя'
+    phone: 'Телефон'
+    email: 'Email'
+    company: 'Компания'
+    idea: 'Идея'
+    message: 'Сообщение'
+    extra: 'Дополнительно'
+    type: 'Тип'
+    send: 'ОТПРАВИТЬ'
+    request: 'ЗАПРОС'
+  price:
+    mobile: 'Mobile Friendly'
+    singlepage: 'Single-page Application'
+    multilingual: 'Multilingual Website'
+    support: 'Professional Support / Hosting'
+    interactive: 'Interactive Website'
+  Menu: 'Меню'
+  Blog: 'Блог'
   pages:
     our_work: 'Наша работа'
     our_team: 'Наша команда'

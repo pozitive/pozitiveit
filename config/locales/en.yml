@@ -1,16 +1,33 @@
 # Application
 en:
+  home: 'HOME'
   services: 'SERVICES'
+  Services: 'Services'
   works: 'SAMPLES'
   process: 'PROCESS'
   team: 'TEAM'
   pricing: 'PRICING'
   contact: 'CONTACT'
   jumpproject: 'KICK START'
-  message: 'CONTACT US'
-  hireus: 'CONTACT US'
   kickstartproject: 'KICK START'
+  slogandescription: 'Start to finish website development to fit your needs'
+  kickstartyourproject: 'KICK START YOUR PROJECT'
+  # Portfolio
+  Recent_Work: 'Recent Work'
+  # Hire Us
+  hireus: 'CONTACT US'
+  # Team
+  Meet_Our_Team: 'Meet Our Team'
+  Brett: 'Brett the Content Editor and Your Contact:'
+  Alla: 'Alla the Designer:'
+  # Price
+  Website_Pricing: 'Website Pricing'
+  order_now: 'Order Now'
+  # Contact Us
   getresponse: 'We look forward to hearing from you!'
+  We_respond: 'We respond to all inquiries within 24 hours'
+  message: 'CONTACT US'
+
   form:
     name: 'Name'
     phone: 'Phone'
@@ -23,11 +40,13 @@ en:
     send: 'SEND'
     request: 'REQUEST'
   price:
-    mobile: Mobile Friendly
-    singlepage: Single-page Application
-    multilingual: Multilingual Website
-    support: Professional Support / Hosting
-    interactive: Interactive Website
+    mobile: 'Mobile Friendly'
+    singlepage: 'Single-page Application'
+    multilingual: 'Multilingual Website'
+    support: 'Professional Support / Hosting'
+    interactive: 'Interactive Website'
+  Menu: 'Menu'
+  Blog: 'Blog'
   pages:
     our_work: 'Our Work'
     our_team: 'Our Team'

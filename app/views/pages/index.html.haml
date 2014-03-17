@@ -8,20 +8,3 @@
     %p= truncate_html page.content, length: 500
     %p= link_to 'Read more', page_path(page), class: 'button tiny'
     %p= link_to 'Edit', edit_page_path(page) if user_signed_in?
-
--#     %th
--#     %th
--#     %th
-
--#   - @pages.each do |page|
--#     %tr
--#       %td= page.name
--#       %td= page.permalink
--#       %td= page.content
--#       %td= link_to 'Show', page
--#       %td= link_to 'Edit', edit_page_path(page)
--#       %td= link_to 'Destroy', page, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
--# %br
-
--# = link_to 'New Page', new_page_path

@@ -8,8 +8,4 @@
     %article
       %p
         = simple_format @page.content
-
-    %nav
-      = link_to 'Edit', edit_page_path(@page)
-      \|
-      = link_to 'Back', pages_path
+    = manage_page

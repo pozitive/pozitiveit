@@ -18,9 +18,10 @@
         %a{href:"mailto:box@pozitive.biz"} box@pozitive.biz
   .row
     .small-12.columns
-      %p <strong>Menu</strong>
+      %p
+        %strong= t('Menu')
       %ul.inline-list
-        %li= link_to 'BLOG', pages_path
+        %li= link_to t('BLOG'), pages_path
         %li
           %a{href: "/#{I18n.locale}/#services"}
             = t('services')
