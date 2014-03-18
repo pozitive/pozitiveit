@@ -18,8 +18,16 @@ en:
   hireus: 'CONTACT US'
   # Team
   Meet_Our_Team: 'Meet Our Team'
-  Brett: 'Brett the Content Editor and Your Contact:'
-  Alla: 'Alla the Designer:'
+  Brett: 'Brett Dvoretz'
+  brett_job: 'Business Development'
+  Alla: 'Alla Kanaeva'
+  alla_job: 'Graphic Designer'
+  Dima: 'Dima Sukhikh'
+  dima_job: 'Developer'
+  teamblock:
+    brett_description: 'With 8 years of startup experience, Brett has a firm grasp on what it takes to make a company succeed; flawless products and exceptional customer service. Brett keeps the developers inline and on track so that your project is completed to your specifications and within your desired time frame.'
+    alla_description: 'Alla uses her subtle woman’s touch for all of our logo creation and website design needs. She is innovative and an expert at creating sleek modern designs that are pleasing to the eye and easily brandable.'
+    dima_description: 'Dima is an expert in a number of frameworks and scripting languages. He prefers to build in RoR, but has extensive knowledge of HTML5, PHP, JavaScript, Jquery, and Django as well. He holds Bachelor’s Degree in Computer Science and has over 7 years of experience in the IT industry.'
   # Price
   Website_Pricing: 'Website Pricing'
   order_now: 'Order Now'
