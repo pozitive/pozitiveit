@@ -14,8 +14,8 @@
               .icon
                 %h4
                   %a{href: "mailto:brett@pozitive.biz"} brett@pozitive.biz
-                %h4 Brett Dvoretz
-                %h5 CEO
+                %h4= t('Brett')
+                %h5= t('brett_job')
         .description
           %h3= t('Brett')
           %h4= t('brett_job')
@@ -28,8 +28,8 @@
               .icon
                 %h4
                   %a{href: "mailto:art@pozitive.biz"} art@pozitive.biz
-                %h4 Alla Kanaeva
-                %h5 Designer
+                %h4= t('Alla')
+                %h5= t('alla_job')
         .description
           %h3= t('Alla')
           %h4= t('alla_job')
@@ -42,9 +42,24 @@
               .icon
                 %h4
                   %a{href: "mailto:box@pozitive.biz"} box@pozitive.biz
-                  %h4 Dima Sukhikhp
-                  %h5 Web Developer
+                  %h4= t('Dima')
+                  %h5= t('dima_job')
         .description
           %h3= t('Dima')
           %h4= t('dima_job')
           %p= t('teamblock.dima_description')                
+    .row
+      .columns.small-6.medium-4
+        .view
+          .thumbnail
+            =image_tag("team/denis.png", class: "circle")
+            .overlay.circle
+              .icon
+                %h4
+                  %a{href: "mailto:zam@pozitive.biz"} zam@pozitive.biz
+                %h4= t('Denis')
+                %h5= t('denis_job')
+        .description
+          %h3= t('Denis')
+          %h4= t('denis_job')
+          %p= t('teamblock.denis_description')
