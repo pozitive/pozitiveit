@@ -1,0 +1,25 @@
+.row
+  .small-12.columns
+    %h1= t('Services')
+%hr
+.row
+  .small-12.medium-3.columns.text-center
+    = image_tag('responsive.png')
+  .small-12.medium-9.columns
+    %h2= Page.find_by_permalink('responsive').name
+    %p= Page.find_by_permalink('responsive').content
+%hr.white
+.row
+  .small-12.medium-3.columns.text-center
+    = image_tag('ror.png')
+  .small-12.medium-9.columns
+    %h2= Page.find_by_permalink('ror').name
+    %p= Page.find_by_permalink('ror').content
+%hr.white
+.row
+  .small-12.medium-3.columns.text-center
+    = image_tag('multilingual-seo.png')
+  .small-12.medium-9.columns
+    %h2= Page.find_by_permalink('multilingual-seo').name
+    %p= Page.find_by_permalink('multilingual-seo').content
+

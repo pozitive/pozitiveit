@@ -1,25 +1,6 @@
 %footer.bg.sections
   .row
-    .small-12.medium-8.columns
-      %p.phone= t('layouts.phone')
-      %ul.inline-list
-        %li +7 499 705 2573
-        %li +44 20 3519 3273
-    .small-12.medium-4.columns
-      .links.right
-        %nav.inline-list
-          %li.name
-            %h5#logo
-              = ("POZ" + image_tag('logo_50.png') + "IVE").html_safe
-  .row
     .small-12.columns
-      %p <strong>Email</strong>
-      %p
-        %a{href:"mailto:box@pozitive.biz"} box@pozitive.biz
-  .row
-    .small-12.columns
-      %p
-        %strong= t('Menu')
       %ul.inline-list
         %li
           %a{href: "#services"}
@@ -40,6 +21,29 @@
           %a{href: "#contact_form"}
             = t('contact')
         %li= link_to t('blog'), pages_path
+  .row
+    .small-12.medium-6.large-3.columns
+      %p.phone= t('layouts.phone')
+      %ul.inline-list
+        %li 954-828-2252
+    .small-12.medium-6.large-3.columns
+      %p <strong>Email</strong>
+      %p
+        %a{href:"mailto:info@pozitive.biz"} info@pozitive.biz
+    .small-12.medium-6.large-3.columns.social
+      %p <strong>Social</strong>
+      %a{href: "https://github.com/pozitive"}
+        %i.fi-social-github
+      %a{href: "https://www.facebook.com/pozitive.biz"}
+        %i.fi-social-facebook
+      %a{href: "skype:brettdvoretz?call"}
+        %i.fi-social-skype
+    .small-12.medium-6.large-3.columns
+      .links
+        %nav.inline-list
+          %li.name
+            %h2#footerlogo
+              = ("POZ" + image_tag('logo.png', size: "75") + "IVE").html_safe
   .row
     .small-12.columns
       %p.center Established 2007 <span class="copyleft"> © </span>

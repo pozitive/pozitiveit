@@ -6,7 +6,7 @@ module PagesHelper
       <a href="#{page_path(page)}" class="">
         #{image_tag(name + '.png')}
         <h3>#{page.name}</h3>
-        <p>#{truncate(page.content, length: 250)}</p>
+        <p>#{truncate(page.content, length: 150)}</p>
       </a>
     HTML
   end

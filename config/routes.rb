@@ -3,6 +3,7 @@ Pozitive::Application.routes.draw do
   scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
     resources :pages
     resources :messages
+    get 'services' => 'pages#services'
     root to: 'pages#welcome'
     devise_for :users
   end

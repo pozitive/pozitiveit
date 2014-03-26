@@ -4,6 +4,7 @@
 
 // Uncomment to use rem-calc() in your settings
 @import "foundation/functions";
+@import 'foundation-icons';
 
 // $experimental: true;
 
@@ -1015,11 +1016,12 @@ html, body {
 }
 h1#logo {
     font-family: 'Dejavu Sans Mono';
-
 }
 #navbar {
 }
-
+hr.white {
+   border-color: white;
+}
 
 
 
@@ -1312,21 +1314,34 @@ button.basic {
     }
 }
 footer.sections {
-    padding: rem-calc(70) 0 rem-calc(100);
+    padding: rem-calc(20) 0 rem-calc(0);
 }
-
+#footerlogo {
+    font-family: 'Dejavu Sans Mono';
+    font-size: rem-calc(35);
+    font-weight: bold;
+}
 footer {
     h1, h2, h3, h4, h5, ul, li, p, a {
-    color: lighten($body-font-color, 40%);
+    color: $body-font-color;
     }
     .phone {
 	font-weight: bold;
     }
     img {
-	opacity: 0.6;
+
     }
     img:hover {
 	opacity: 1;
+    }
+    .social {
+	p {
+	    margin-bottom: rem-calc(5);
+	}
+    }
+    i {
+	font-size: rem-calc(40);
+	margin-right: rem-calc(25);
     }
 }
 .copyleft {
