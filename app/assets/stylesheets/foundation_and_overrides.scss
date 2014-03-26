@@ -64,7 +64,7 @@ $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
 // We use these as default colors throughout
 $primary-color: #008CBA;
 $secondary-color: #e7e7e7;
-$alert-color: #f04124;
+$alert-color: #F30000;
 $success-color: #43AC6A;
 
 // We use these to make sure border radius matches unless we want it different.
@@ -939,8 +939,8 @@ $xxlarge-range: (120.063em);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #FFF;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #333;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 $topbar-height: 55px;
@@ -964,8 +964,8 @@ $topbar-margin-bottom: 0px;
 // $topbar-link-color: #979797;
 // $topbar-link-color-hover: #444;
 // $topbar-link-color-active: #444;
-// $topbar-link-weight: normal;
-// $topbar-link-font-size: rem-calc(15);
+$topbar-link-weight: normal;
+$topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg-hover: #f5f5f5;
 // $topbar-link-bg-active: $primary-color;
@@ -983,25 +983,26 @@ $topbar-dropdown-label-font-weight: bold;
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase;
 $topbar-menu-link-font-size: rem-calc(13);
-$topbar-menu-link-weight: bold;
+$topbar-menu-link-weight: normal;
 $topbar-menu-link-color: #fff;
 $topbar-menu-icon-color: #fff;
 $topbar-menu-link-color-toggled: #888;
 $topbar-menu-icon-color-toggled: #888;
 
 // Transitions and breakpoint styles
-// $topbar-transition-speed: 300ms;
+$topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 $topbar-breakpoint: #{upper-bound($large-range)}; // Change to 9999px for always mobile layout
-// $topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
+$topbar-media-query: "only screen and (min-width: #{upper-bound($medium-range)})";
 
 // Divider Styles
 // $topbar-divider-border-bottom: solid 1px lighten($topbar-bg-color, 10%);
 // $topbar-divider-border-top: solid 1px darken($topbar-bg-color, 10%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-sticky-class: ".sticky";
+$topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+
 @import 'foundation';
 
 
@@ -1009,15 +1010,30 @@ $topbar-breakpoint: #{upper-bound($large-range)}; // Change to 9999px for always
 html, body {
     height: 100%;
 }
-.top-bar-section .has-form {
-    padding-top: 5px;
+// Header
+#header {
+    /* height: 75px; */
+    /* background: $topbar-bg-color; */
+    /* .name { */
+    /* 	padding: 7px 0 0; */
+    /* 	height: 60px;	 */
+    /* } */
 }
-main {
-    padding: rem-calc(70) 0 rem-calc(50);
+h1#logo {
+    font-family: 'Dejavu Sans Mono';
+    font-size: rem-calc(25);
+}
+#navbar {
+    li:not(.has-form) a:not(.button) {
+	/* padding: 0 rem-calc(15); */
+    }
 }
 
-.wlc {
-    margin: rem-calc(20) auto rem-calc(20);
+
+
+
+main {
+    padding: rem-calc(70) 0 rem-calc(50);
 }
 $color-bg: #F4F6F8;
 .bg {
@@ -1025,9 +1041,8 @@ $color-bg: #F4F6F8;
     border-bottom: 1px solid #E2E2E2;
     border-top: 1px solid #E2E2E2;
 }
-#logo {
-    font-family: 'Dejavu Sans Mono';
-}
+
+
 // Hero
 #hero {
     img {

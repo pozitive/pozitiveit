@@ -5,6 +5,14 @@ GIT
     compass-rails (1.1.2)
       compass (>= 0.12.2)
 
+GIT
+  remote: git://github.com/zurb/foundation-rails.git
+  revision: ca6b79ea411ea41b4b98a52857a2ee9306f83f0a
+  specs:
+    foundation-rails (5.2.1.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,9 +100,6 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
-    foundation-rails (5.0.2.0)
-      railties (>= 3.1.0)
-      sass (>= 3.2.0)
     fssm (0.2.10)
     gherkin (2.12.2)
       multi_json (~> 1.3)
@@ -228,7 +233,7 @@ DEPENDENCIES
   debugger
   devise
   figaro
-  foundation-rails
+  foundation-rails!
   globalize (~> 4.0.0.alpha.2)
   haml-rails
   jbuilder (~> 1.2)

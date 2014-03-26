@@ -1,16 +1,14 @@
-%header
-  %nav.top-bar.shadow{data: {topbar: "", options: "is_hover: false"}}
+%header#header.sticky
+  %nav.top-bar.shadow{data: {topbar: ""}}
     %ul.title-area
       %li.name
         %h1#logo
-          = link_to ("POZ" + image_tag('logo_44.png') + "IVE").html_safe, root_path
+          = link_to ("POZ" + image_tag('logo.png', size: "55") + "IVE").html_safe, root_path
       %li.toggle-topbar.menu-icon
         %a{href: "#"}
           %span Menu
-    %section{class: "top-bar-section"}
-      %ul{class: "right"}
-        %li.divider
-        %li= link_to t('home'), root_path
+    %section.top-bar-section
+      %ul#navbar.right
         %li.divider
         %li
           %a{href: "/#{I18n.locale}/#services"}= t('services')
