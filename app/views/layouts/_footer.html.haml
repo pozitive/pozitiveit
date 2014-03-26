@@ -21,25 +21,25 @@
       %p
         %strong= t('Menu')
       %ul.inline-list
-        %li= link_to t('BLOG'), pages_path
         %li
-          %a{href: "/#{I18n.locale}/#services"}
+          %a{href: "#services"}
             = t('services')
         %li
-          %a{href: "/#{I18n.locale}/#portfolio"}
+          %a{href: "#portfolio"}
             = t('works')
         %li
-          %a{href: "/#{I18n.locale}/#content"}
+          %a{href: "#content"}
             = t('process')
         %li
-          %a{href: "/#{I18n.locale}/#team"}
+          %a{href: "#team"}
             = t('team')
         %li
-          %a{href: "/#{I18n.locale}/#price"}
+          %a{href: "#price"}
             = t('pricing')
         %li
-          %a{href: "/#{I18n.locale}/#contact_form"}
+          %a{href: "#contact_form"}
             = t('contact')
+        %li= link_to t('blog'), pages_path
   .row
     .small-12.columns
       %p.center Established 2007 <span class="copyleft"> © </span>

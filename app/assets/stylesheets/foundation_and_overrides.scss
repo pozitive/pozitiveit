@@ -943,7 +943,7 @@ $topbar-bg-color: #333;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 55px;
+$topbar-height: 65px;
 $topbar-margin-bottom: 0px;
 
 // Control Input height for top bar
@@ -1012,21 +1012,12 @@ html, body {
 }
 // Header
 #header {
-    /* height: 75px; */
-    /* background: $topbar-bg-color; */
-    /* .name { */
-    /* 	padding: 7px 0 0; */
-    /* 	height: 60px;	 */
-    /* } */
 }
 h1#logo {
     font-family: 'Dejavu Sans Mono';
-    font-size: rem-calc(25);
+
 }
 #navbar {
-    li:not(.has-form) a:not(.button) {
-	/* padding: 0 rem-calc(15); */
-    }
 }
 
 
@@ -1372,6 +1363,9 @@ footer {
     }
 }
 @media only screen and (min-width: 60.063em) {
+    h1#logo {
+	font-size: rem-calc(25);
+    }
     h1.slogan {
 	font-size: rem-calc(64);
     }

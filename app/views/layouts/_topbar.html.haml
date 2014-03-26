@@ -3,35 +3,14 @@
     %ul.title-area
       %li.name
         %h1#logo
-          = link_to ("POZ" + image_tag('logo.png', size: "55") + "IVE").html_safe, root_path
+          = link_to ("POZ" + image_tag('logo_55.png') + "IVE").html_safe, root_path
       %li.toggle-topbar.menu-icon
         %a{href: "#"}
-          %span Menu
+          %span 
     %section.top-bar-section
       %ul#navbar.right
         %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#services"}= t('services')
-        %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#portfolio"}
-            = t('works')
-        %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#content"}
-            = t('process')
-        %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#team"}
-            = t('team')
-        %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#price"}
-            = t('pricing')
-        %li.divider
-        %li
-          %a{href: "/#{I18n.locale}/#contact_form"}
-            = t('contact')
+        %li= link_to t('home'), root_path
         %li.divider
         %li.has-dropdown
           = link_to "LANGUAGES", locale: "en"
@@ -41,5 +20,5 @@
             %li= link_to "简体中文", locale: "zh-CN"
         %li.divider
         %li.has-form
-          %a.button.tiny.success.radius.switch{ data: {action: "button-kick--project"}}= t('jumpproject')
+          %a.button.tiny.success.radius{ data: {action: "button-kick--project"}}= t('jumpproject')
         = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius" if user_signed_in?
