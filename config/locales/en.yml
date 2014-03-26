@@ -3,17 +3,19 @@ en:
   home: 'HOME'
   services: 'SERVICES'
   Services: 'Services'
-  works: 'SAMPLES'
+  portfolio: 'Portfolio'
+  works: 'PORTFOLIO'
   process: 'PROCESS'
   team: 'TEAM'
   pricing: 'PRICING'
+  about-us: 'ABOUT US'
   contact: 'CONTACT'
   jumpproject: 'KICK START'
   kickstartproject: 'KICK START'
   slogandescription: 'Start to finish website development to fit your needs'
   kickstartyourproject: 'KICK START YOUR PROJECT'
   # Portfolio
-  Recent_Work: 'Recent Work'
+  Recent_Works: 'Recent Works'
   # Hire Us
   hireus: 'CONTACT US'
   # Team
@@ -74,6 +76,7 @@ We have a proven record of helping great ideas grow into successful businesses.'
     blockcontent3: 'In our days Multilingual SEO has become incredibly important for customs who want to have a global audience. In order to reach a global audience, your website should be in different languages. 
 Multilingual content also improves your website rankings on the Search Engine Results Pages (SERPS).'
     tools: "Our tools"
+    toolstitle: "Our tools are part of our team and these are the tools we use"
   layouts:
     phone: "Phone"
     contact: "Contact"

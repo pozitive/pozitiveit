@@ -14,6 +14,12 @@
         %li.divider
         %li= link_to t('services'), services_path
         %li.divider
+        %li= link_to t('works'), portfolio_path
+        %li.divider
+        %li= link_to t('process'), page_path(Page.find_by_permalink('our-process'))
+        %li.divider
+        %li= link_to t('about-us'), about_us_path
+        %li.divider
         %li.has-dropdown
           = link_to "LANGUAGES", locale: "en"
           %ul.dropdown
@@ -22,5 +28,5 @@
             %li= link_to "简体中文", locale: "zh-CN"
         %li.divider
         %li.has-form
-          %a.button.tiny.success.radius{ data: {action: "button-kick--project"}}= t('jumpproject')
+          %a#kick.button.tiny.success.radius{ data: {action: "button-kick--project"}}= t('jumpproject')
         = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius" if user_signed_in?

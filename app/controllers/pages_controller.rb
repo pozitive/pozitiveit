@@ -24,10 +24,8 @@ class PagesController < ApplicationController
     @message = Message.new
   end
 
-  def services
-    @responsive = view_context.services_item('responsive')
-    @ror = view_context.services_item('ror')
-    @seo = view_context.services_item('multilingual-seo')
+  def aboutus
+    @work = view_context.content_item('our-work')
   end
 
   # GET /pages/new

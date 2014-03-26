@@ -1,55 +1,30 @@
-%section#portfolio.recentwork.sections
+%section#portfolio.recentwork.sections.bg
   .row
     .columns
-      %h1= t('Recent_Work')
+      %h1= link_to t('Recent_Works'), portfolio_path
       %hr
   .row
     .columns.small-6.medium-3
       .view
-        %a.thumbnail{href: "http://hinkels.ru"}
-          =image_tag("projects/hinkels_600.jpg")
-          .overlay
-            %h4 HINKELS CONSULTING
-    .columns.small-6.medium-3
-      .view
-        %a.thumbnail{href: "http://group-a3.com/"}
-          =image_tag("projects/a3group_400.jpg")
-          .overlay
-            %h4 A3 GROUP
-    .columns.small-6.medium-3
-      .view
-        %a.thumbnail{href: "http://russia-promo.com/"}
-          =image_tag("projects/rpromo_400.jpg")
-          .overlay
-            %h4 RUSSIA PROMO
-    .columns.small-6.medium-3
-      .view
-        %a.thumbnail{href: "http://gz-info.ru"}
-          =image_tag("projects/gzinfo_600.jpg")
-          .overlay
-            %h4 GUANGZHOU INFO
-  .row
-    .columns.small-6.medium-3
-      .view
-        %a.thumbnail{href: "http://sitiart.ru"}
+        %a.thumbnail{href: "http://sitiart.ru", target: "_blank"}
           =image_tag("projects/siti_1200.jpg")
           .overlay
             %h4 CITIART COMPANY
     .columns.small-6.medium-3
       .view
-        %a.thumbnail{href: "http://mebellook.herokuapp.com"}
+        %a.thumbnail{href: "http://mebellook.herokuapp.com", target: "_blank"}
           =image_tag("projects/mebellook_400.jpg")
           .overlay
             %h4 MEBELLOOK
     .columns.small-6.medium-3
       .view
-        %a.thumbnail{href: "http://taiji-hainan.ru"}
-          =image_tag("projects/taiji_600.jpg")
+        %a.thumbnail{href: "http://gz-info.ru", target: "_blank"}
+          =image_tag("projects/gzinfo_600.jpg")
           .overlay
-            %h4 TAIJI HAINAN
+            %h4 GUANGZHOU INFO
     .columns.small-6.medium-3
       .view
-        %a.thumbnail{href: "http://trf-united.org/"}
+        %a.thumbnail{href: "http://trf-united.org/", target: "_blank"}
           =image_tag("projects/trf_400.jpg")
           .overlay
             %h4 TRF UNITED

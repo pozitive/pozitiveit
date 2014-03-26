@@ -1022,9 +1022,14 @@ h1#logo {
 hr.white {
    border-color: white;
 }
-
-
-
+$grey: #777;
+h1 {
+    a {
+	color: $body-font-color;
+	&:hover {
+	}
+    }
+}
 main {
     padding: rem-calc(70) 0 rem-calc(50);
 }
@@ -1034,7 +1039,9 @@ $color-bg: #F4F6F8;
     border-bottom: 1px solid #E2E2E2;
     border-top: 1px solid #E2E2E2;
 }
-
+#kick {
+    margin-top: 10px;
+}
 
 // Hero
 #hero {
@@ -1102,6 +1109,11 @@ h1.slogan {
     a {
 	color: $body-font-color;
     }
+    h1 {
+	a:hover{
+	    color: #0078A0;
+	}
+    }
 }
 .supporticons {
     text-align: center;
@@ -1115,9 +1127,6 @@ h1.slogan {
     
 }
 .recentwork {
-    background-color: #F6F6F6;
-    border-bottom: 1px solid #E2E2E2;
-    border-top: 1px solid #E2E2E2;
     .view {
 	cursor: default;
 	float: left;
@@ -1152,7 +1161,7 @@ h1.slogan {
 	    -webkit-transition: all 0.3s ease-in-out; 
 	}
 	.overlay {
-	    background: image-url("thumb_over.png") no-repeat scroll center 35% / auto 20% #4C7E8C;
+	    background: image-url("logo.png") no-repeat scroll center 35% / auto 50% $grey;
 	    transform: translateX(-300px);
 	    -webkit-transform: translateX(-300px);
 	    -ms-transform: translateX(-300px);
@@ -1171,7 +1180,7 @@ h1.slogan {
 	    position: absolute;
 	    text-align: center;
 	    text-transform: uppercase;
-	    top: 54%;
+	    top: 70%;
 	    width: 70%;
 	}
 
@@ -1204,6 +1213,7 @@ h1.slogan {
 }
 // Team
 #team{}
+
 .team {
     img {
 	background-color: #fff;
@@ -1233,7 +1243,7 @@ h1.slogan {
 	    position: absolute;
 	    top: 0;
 	    width: 100%;
-	    background-color: #4C7E8C;
+	    background-color: $grey;
 	    opacity: 0;
 	    transition: all 0.5s ease-in-out; 
 	    z-index: 4;
@@ -1247,7 +1257,7 @@ h1.slogan {
 		width: 170px;
 		z-index: 6;
 	    }
-	    a, h4, h5 {
+	    a, h4, h5,p {
 		color: #FFF;
 	    }
 	}

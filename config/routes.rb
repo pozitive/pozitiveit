@@ -4,6 +4,8 @@ Pozitive::Application.routes.draw do
     resources :pages
     resources :messages
     get 'services' => 'pages#services'
+    get 'portfolio' => 'pages#portfolio'
+    get 'about_us' => 'pages#aboutus'
     root to: 'pages#welcome'
     devise_for :users
   end
