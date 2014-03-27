@@ -1242,7 +1242,7 @@ h1.slogan {
 	    position: absolute;
 	    top: 0;
 	    width: 100%;
-	    background-color: $grey;
+	    background: image-url("logo.png") no-repeat scroll center 10% / auto 35% $grey;
 	    opacity: 0;
 	    transition: all 0.5s ease-in-out; 
 	    z-index: 4;
@@ -1261,6 +1261,9 @@ h1.slogan {
 	    }
 	    p {
 		margin-bottom: rem-calc(5);
+	    }
+	    h4 {
+		border-bottom: 1px solid white;
 	    }
 	}
     }
