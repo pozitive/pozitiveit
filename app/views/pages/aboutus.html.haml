@@ -1,13 +1,12 @@
 %section#team.team
-  %header
-    .row
-      .columns
-        %h1= t('About-us')
-        %hr
-    .row
-      .columns
-        %h2= t('Meet_Our_Team')
+  .row
+    .columns.small-12
+      = @work
   %hr.white
+  .row
+    .columns
+      %h1= t('Meet_Our_Team')
+  %hr
   %article.about_team
     .row
       .columns.small-12.medium-4.large-3
@@ -42,7 +41,7 @@
           %p= t('alla_job')
           %p= t('teamblock.alla_description')
     .row
-      .columns.small-12.medium-3
+      .columns.small-12.medium-4.large-3
         .view
           .thumbnail
             = image_tag("team/denis.png", class: "circle")
@@ -52,13 +51,13 @@
                   %a{href: "mailto:zam@pozitive.biz"} zam@pozitive.biz
                 %p= t('Denis')
                 %p= t('denis_job')
-      .columns.small-12.medium-8
-        .description.hide-for-small-only
+      .columns.small-12.medium-8.large-8
+        .description
           %h4= t('Denis')
           %p= t('denis_job')
           %p= t('teamblock.denis_description')
     .row
-      .columns.small-12.medium-3
+      .columns.small-12.medium-4.large-3
         .view
           .thumbnail
             = image_tag("team/brett.png", class: "circle")
@@ -68,8 +67,8 @@
                   %a{href: "mailto:brett@pozitive.biz"} brett@pozitive.biz
                 %p= t('Brett')
                 %p= t('brett_job')
-      .columns.small-12.medium-8
-        .description.hide-for-small-only
+      .columns.small-12.medium-8.large-8
+        .description
           %h4= t('Brett')
           %p= t('brett_job')
           %p= t('teamblock.brett_description')
@@ -79,26 +78,23 @@
   .row
     .columns
       %h3=t('pages.toolstitle')
-      %hr.white
+      %hr
       %ul.small-block-grid-3.medium-block-grid-6.grayscale
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/Backbone.js", target: "_blank"}
             =image_tag('tools/backbone.png')
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/Arch_Linux", target: "_blank"}
             =image_tag('tools/arch.png')
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/Emacs", target: "_blank"}
             =image_tag('tools/emacs.png')
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/EmberJS", target: "_blank"}
             =image_tag('tools/ember.png')
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/Happy_Hacking_Keyboard", target: "_blank"}
             =image_tag('tools/hhkb.png')
         %li
-          %a.th
+          %a.th{href: "http://en.wikipedia.org/wiki/Ruby_on_Rails", target: "_blank"}
             =image_tag('tools/rails.png')
-.row
-  .columns.small-12
-    = @work
