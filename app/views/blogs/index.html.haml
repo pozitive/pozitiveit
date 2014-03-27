@@ -1,0 +1,26 @@
+%h1= t('blog.blog')
+%hr
+
+%table
+  %tr
+    %th Name
+    %th Permalink
+    %th Image
+    %th Content
+    %th
+    %th
+    %th
+
+  - @blogs.each do |blog|
+    %tr
+      %td= blog.name
+      %td= blog.permalink
+      %td= blog.image
+      %td= blog.content
+      %td= link_to 'Show', blog
+      %td= link_to 'Edit', edit_blog_path(blog)
+      %td= link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Blog', new_blog_path

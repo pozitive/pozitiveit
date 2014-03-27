@@ -64,6 +64,8 @@ ru:
   layouts:
     phone: "Телефон"
     contact: "Контакты"
+  blog:
+    does_not_exist: 'Данной страницы блога не существует или она не переводена на русский язык'
 
 
 # Default ru.yml from rails-i18n

@@ -1,0 +1,22 @@
+= form_for @blog do |f|
+  - if @blog.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@blog.errors.count, "error")} prohibited this blog from being saved:"
+      %ul
+        - @blog.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :permalink
+    = f.text_field :permalink
+  .field
+    = f.label :image
+    = f.text_field :image
+  .field
+    = f.label :content
+    = f.text_area :content
+  .actions
+    = f.submit 'Save'

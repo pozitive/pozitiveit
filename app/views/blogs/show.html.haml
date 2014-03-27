@@ -1,0 +1,21 @@
+%p#notice= notice
+
+- if @blog.present?
+  %p
+    %b Name:
+    = @blog.try(:name)
+  %p
+    %b Permalink:
+    = @blog.try(:permalink)
+  %p
+    %b Image:
+    = @blog.try(:image)
+  %p
+    %b Content:
+    = @blog.try(:content)
+
+  = link_to 'Edit', edit_blog_path(@blog)
+  \|
+  = link_to 'Back', blogs_path
+- else
+  %h3.big_margin= t('blog.does_not_exist')

@@ -81,7 +81,9 @@ Multilingual content also improves your website rankings on the Search Engine Re
   layouts:
     phone: "Phone"
     contact: "Contact"
-        
+  blog:
+    blog: 'Blog'
+    does_not_exist: 'this blog page does not exist or it has no translation into Russian'
 
 
     
