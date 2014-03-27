@@ -2,7 +2,7 @@
   %li= link_to t('home'), root_path
 
 %h1= t('blogs.blog')
-= link_to 'New Blog Page', new_page_path if user_signed_in? 
+= link_to 'New Blog Page', new_blog_path if user_signed_in? 
 %hr
 - @blogs.each do |blog|
   %article
