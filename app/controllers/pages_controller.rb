@@ -28,6 +28,9 @@ class PagesController < ApplicationController
     @work = view_context.content_item('our-work')
   end
 
+  def contactus
+    @message = Message.new
+  end
   # GET /pages/new
   def new
     @page = Page.new

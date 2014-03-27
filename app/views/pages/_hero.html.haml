@@ -5,6 +5,5 @@
         %h1 The best way to create IT
         %p= t('slogandescription')
         %p.button-top
-          -# %a.button.secondary.radius Discover More 
-          %a.button.alert.radius.big.switch{href: "#contact_form", data: {action: "button-kick-project"}}= t('kickstartyourproject')
+          = link_to t('kickstartyourproject'), new_message_path(type_website: "Startup"), class: "button alert radius", id: 'kick'
 

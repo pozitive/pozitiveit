@@ -12,6 +12,10 @@ class MessagesController < ApplicationController
   def show
   end
 
+  def order
+    @message = Message.new
+  end
+
   # GET /messages/new
   def new
     @message = Message.new

@@ -9,30 +9,13 @@
   #message
     .row
       #name.small-12.columns
-        %small Contact us for general inquiries and customer service. If you are interested in developing a project, please use the Kick Start form.
-      #name.small-12.columns
         %label= t('form.name')
         = f.text_field :name, {required: '', placeholder: "Your Name here"}
-      #phone.small-12.columns.hide
-        %label= t('form.phone')
-        = f.text_field :phone, {placeholder: "(555) 555-5555"}
       #email.small-12.columns
         %label= t('form.email')
         = f.text_field :email, {required: '', placeholder: "Yourname@example.biz"}
-      #company.small-12.columns.hide
-        %label= t('form.company')
-        = f.text_field :company, {placeholder: "Write your company name ..."}
-      #idea.small-12.columns.hide
-        %label= t('form.idea')
-        = f.text_field :idea, {placeholder: "Write your idea here ..."}
       #message.small-12.columns
         %label= t('form.message')
         = f.text_area :message, {required: '', placeholder: "Write your message here..."}
-      #extra.small-12.columns.hide
-        %label= t('form.extra')
-        = f.text_field :extra, {placeholder: "Additional Information"}
-      #type.small-12.columns.hide
-        %label= t('form.type')
-        = f.text_field :type_website 
       #send_button.small-12.columns
         = f.submit t('form.send'), class: 'button success'

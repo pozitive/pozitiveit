@@ -20,6 +20,8 @@
         %li.divider
         %li= link_to t('about-us'), about_us_path
         %li.divider
+        %li= link_to t('contact'), contact_us_path
+        %li.divider
         %li.has-dropdown
           = link_to "LANGUAGES", locale: "en"
           %ul.dropdown
@@ -28,5 +30,5 @@
             %li= link_to "简体中文", locale: "zh-CN"
         %li.divider
         %li.has-form
-          %a#kick.button.tiny.success.radius{ data: {action: "button-kick--project"}}= t('jumpproject')
+          = link_to t('jumpproject'), new_message_path(type_website: "Startup"), class: "button success tiny radius", id: 'kick'
         = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius" if user_signed_in?

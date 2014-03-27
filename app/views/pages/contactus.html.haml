@@ -2,15 +2,13 @@
   %header
     .row
       .columns
-        %h1= t('About-us')
+        %h1= t('contact_us')
         %hr
+        %p Please keep in mind the time difference when calling. We are UTC/GMT +7 hours. If calling from the US, the best time is beteen 8am and 12pm
+
+  %article
     .row
-      .columns
-        %h2= t('Meet_Our_Team')
-  %hr.white
-  %article.about_team
-    .row
-      .columns.small-12.medium-4.large-3
+      .columns.small-12.medium-3
         .view
           .thumbnail
             = image_tag("team/dima.png", class: "circle")
@@ -20,13 +18,13 @@
                   %a{href: "mailto:box@pozitive.biz"} box@pozitive.biz
                 %p= t('Dima')
                 %p= t('dima_job')
-      .columns.small12.medium-8.large-8
-        .description
+        .description.text-center.hide-for-small-only
           %h4= t('Dima')
           %p= t('dima_job')
-          %p= t('teamblock.dima_description')
-    .row
-      .columns.small-12.medium-4.large-3
+          %h5 +7 499 7052573 
+          %h5
+            %a{href: "mailto: box@pozitive.biz"} box@pozitive.biz
+      .columns.small-12.medium-3
         .view
           .thumbnail
             = image_tag("team/alla.png", class: "circle")
@@ -36,12 +34,12 @@
                   %a{href: "mailto:art@pozitive.biz"} art@pozitive.biz
                 %p= t('Alla')
                 %p= t('alla_job')
-      .columns.small12.medium-8.large-8
-        .description
+        .description.text-center.hide-for-small-only
           %h4= t('Alla')
           %p= t('alla_job')
-          %p= t('teamblock.alla_description')
-    .row
+          %h5 +855 885541906 
+          %h5
+            %a{href: "mailto:art@pozitive.biz"} art@pozitive.biz
       .columns.small-12.medium-3
         .view
           .thumbnail
@@ -52,12 +50,12 @@
                   %a{href: "mailto:zam@pozitive.biz"} zam@pozitive.biz
                 %p= t('Denis')
                 %p= t('denis_job')
-      .columns.small-12.medium-8
-        .description.hide-for-small-only
+        .description.text-center.hide-for-small-only
           %h4= t('Denis')
           %p= t('denis_job')
-          %p= t('teamblock.denis_description')
-    .row
+          %h5 +855 93271908
+          %h5
+            %a{href: "mailto:zam@pozitive.biz"} zam@pozitive.biz
       .columns.small-12.medium-3
         .view
           .thumbnail
@@ -68,37 +66,17 @@
                   %a{href: "mailto:brett@pozitive.biz"} brett@pozitive.biz
                 %p= t('Brett')
                 %p= t('brett_job')
-      .columns.small-12.medium-8
-        .description.hide-for-small-only
+        .description.text-center.hide-for-small-only
           %h4= t('Brett')
           %p= t('brett_job')
-          %p= t('teamblock.brett_description')
+          %h5 +855 93271908
+          %h5
+            %a{href: "mailto:brett@pozitive.biz"} brett@pozitive.biz
 
-%hr.white
-%section#tools.tools
+%section#contact_form.sections
   .row
     .columns
-      %h3=t('pages.toolstitle')
-      %hr.white
-      %ul.small-block-grid-3.medium-block-grid-6.grayscale
-        %li
-          %a.th
-            =image_tag('tools/backbone.png')
-        %li
-          %a.th
-            =image_tag('tools/arch.png')
-        %li
-          %a.th
-            =image_tag('tools/emacs.png')
-        %li
-          %a.th
-            =image_tag('tools/ember.png')
-        %li
-          %a.th
-            =image_tag('tools/hhkb.png')
-        %li
-          %a.th
-            =image_tag('tools/rails.png')
-.row
-  .columns.small-12
-    = @work
+      %h1= t('getresponse')
+      %hr
+      %h4= t('We_respond')
+  = render "message"

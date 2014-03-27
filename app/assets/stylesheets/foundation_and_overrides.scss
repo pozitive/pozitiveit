@@ -1213,7 +1213,6 @@ h1.slogan {
 }
 // Team
 #team{}
-
 .team {
     img {
 	background-color: #fff;
@@ -1260,6 +1259,9 @@ h1.slogan {
 	    a, h4, h5,p {
 		color: #FFF;
 	    }
+	    p {
+		margin-bottom: rem-calc(5);
+	    }
 	}
     }
     .thumbnail:hover {
@@ -1275,6 +1277,11 @@ h1.slogan {
 	h3 {
 	    margin:rem-calc(20) 0;
 	}
+    }
+}
+.about_team {
+    .row {
+	margin-bottom: rem-calc(20);
     }
 }
 .circle {
@@ -1307,11 +1314,10 @@ h1.slogan {
 }
 
 // Contact US
-#contact_form {
-    textarea {
-	min-height: 150px;
-    }
+textarea {
+    min-height: 150px;
 }
+
 .switchbutton {
     margin: rem-calc(30) auto;
 }
@@ -1364,6 +1370,15 @@ footer {
 .center {
     text-align: center;
 }
+
+// Secondary pages 
+// Messages 
+// New 
+.messages_new {
+
+}
+
+
 @media only screen { 
 }
 @media only screen and (min-width: 40.063em) {
@@ -1420,3 +1435,6 @@ footer {
     }
 
 } 
+
+
+

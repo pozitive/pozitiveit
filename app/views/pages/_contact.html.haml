@@ -4,12 +4,4 @@
       %h1= t('getresponse')
       %hr
       %h4= t('We_respond')
-  .row.switchbutton
-    .small-4.columns
-      %button#button-send-message.switch.expand.primary{data: {action: "button-send-message"}}= t('message')
-    .small-4.columns
-      %button#button-hire-us.switch.basic.expand{data: {action: "button-hire-us"}}= t('hireus')
-    .small-4.columns
-      %button#button-kick-project.switch.basic.expand{data: {action: "button-kick-project"}}= t('kickstartproject')
-
   = render "message"
