@@ -1,5 +1,13 @@
 Pozitive::Application.routes.draw do
 
+  # redirect from pages to blog
+  get "/ru/pages/create-and-seo-website-on-chinese-language"  => redirect("/ru/blogs/create-and-seo-website-on-chinese-language")
+  get '/ru/pages/create-website-on-chinese-language' => redirect('/ru/blogs/create-website-on-chinese-language')
+  get '/ru/pages/design-on-chinese-language' => redirect('/ru/blogs/design-on-chinese-language')
+  get '/ru/pages/faq' => redirect('/ru/blogs/faq')
+  get '/ru/pages/advertising-baidu' => redirect('/ru/blogs/advertising-baidu')
+  get '/ru/pages/how-to-get-to-baidu' => redirect('/ru/blogs/how-to-get-to-baidu')
+  get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/ru/blogs/promotion-in-the-chinese-internet')
 
   scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
     resources :pages
@@ -12,6 +20,7 @@ Pozitive::Application.routes.draw do
     root to: 'pages#welcome'
     devise_for :users
   end
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
