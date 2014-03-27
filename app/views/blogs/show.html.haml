@@ -9,5 +9,3 @@
     %h1= @blog.try(:name)
     = markdown @blog.try(:content)
     = manage_blog
-  - else
-    %h3.big_margin= t('blog.does_not_exist')

@@ -64,9 +64,12 @@ class BlogsController < ApplicationController
   end
 
   private
+    def not_found
+      raise ActionController::RoutingError.new('Not Found')
+    end
     # Use callbacks to share common setup or constraints between actions.
     def show_blog
-      @blog = Blog.with_translations(I18n.locale).find_by_permalink(params[:id])
+      @blog = Blog.with_translations(I18n.locale).find_by_permalink(params[:id]) || not_found
     end
 
     def set_blog
