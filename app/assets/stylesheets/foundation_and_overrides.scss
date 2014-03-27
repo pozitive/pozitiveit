@@ -1010,11 +1010,6 @@ $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 // Application styles
 html, body {
     height: 100%;
-    background-color: #0E3B5A;
-    background-image: image-url("hk/hk_1920.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 // Header
 #header {
@@ -1059,6 +1054,12 @@ $color-bg: #F4F6F8;
 #intro {
 }
 .intro {
+    height: 100%;
+    background-color: #0E3B5A;
+    background-image: image-url("hk/hk_1920.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1,h2, p, a {
 	color: #FFFFFF;
     }
