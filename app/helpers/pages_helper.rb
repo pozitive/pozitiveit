@@ -16,7 +16,7 @@ module PagesHelper
     raw <<-HTML
         <h1>#{page.name}</h1>
         <hr>
-        #{page.content}
+        #{markdown page.content}
     HTML
   end
 
