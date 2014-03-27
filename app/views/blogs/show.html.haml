@@ -1,21 +1,13 @@
-%p#notice= notice
+.showblog
+  %p#notice= notice
 
-- if @blog.present?
-  %p
-    %b Name:
-    = @blog.try(:name)
-  %p
-    %b Permalink:
-    = @blog.try(:permalink)
-  %p
-    %b Image:
-    = @blog.try(:image)
-  %p
-    %b Content:
-    = @blog.try(:content)
+  %ul.breadcrumbs
+    %li= link_to t('home'), root_path
+    %li= link_to t('blog'), blogs_path
 
-  = link_to 'Edit', edit_blog_path(@blog)
-  \|
-  = link_to 'Back', blogs_path
-- else
-  %h3.big_margin= t('blog.does_not_exist')
+  - if @blog.present?
+    %h1= @blog.try(:name)
+    = markdown @blog.try(:content)
+    = manage_blog
+  - else
+    %h3.big_margin= t('blog.does_not_exist')

@@ -17,6 +17,7 @@ gem 'figaro'
 gem 'devise'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
+gem 'redcarpet'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

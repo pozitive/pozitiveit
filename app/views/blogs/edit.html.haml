@@ -2,6 +2,7 @@
 
 = render 'form'
 
-= link_to 'Show', @blog
-\|
-= link_to 'Back', blogs_path
+%nav.button-bar
+  %ul.button-group.radius
+    %li= link_to 'Show', @blog, class: "button"
+    %li= link_to 'Back', blogs_path, class: "button"

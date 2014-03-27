@@ -7,6 +7,7 @@ ru:
   process: 'ПРОЦЕСС'
   team: 'КОМАНДА'
   pricing: 'ЦЕНА'
+  about-us: 'О НАС'
   contact: 'КОНТАКТЫ'
   kickstartproject: 'ЗАПУСК ПРОЕКТА'
   jumpproject: 'ЗАПУСК ПРОЕКТА'
@@ -45,7 +46,7 @@ ru:
     support: 'Professional Support / Hosting'
     interactive: 'Interactive Website'
   Menu: 'Меню'
-  Blog: 'Блог'
+  blog: 'БЛОГ'
   pages:
     our_work: 'Наша работа'
     our_team: 'Наша команда'
@@ -64,7 +65,7 @@ ru:
   layouts:
     phone: "Телефон"
     contact: "Контакты"
-  blog:
+  blogs:
     does_not_exist: 'Данной страницы блога не существует или она не переводена на русский язык'
 
 

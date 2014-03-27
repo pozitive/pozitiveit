@@ -1,11 +1,12 @@
-.row
-  .columns
-    %header
-      - if notice.present?
-        %p#notice= notice 
-      %h1
-        = @page.name
-    %article
-      %p
-        = simple_format @page.content
-    = manage_page
+.showpage
+  %header
+    - if notice.present?
+      %p#notice= notice 
+    %h1
+      = @page.name
+  %hr
+
+  %article
+    = markdown @page.content
+
+  = manage_page

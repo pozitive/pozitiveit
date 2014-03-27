@@ -27,7 +27,7 @@ module PagesHelper
             <ul class="button-group radius">
               <li>#{link_to 'Edit', edit_page_path(@page), class: "button"}</li>
               <li>#{link_to 'Back', pages_path, class: "button"}</li>
-              <li>#{link_to 'Destroy', @page, :method => :delete, class: "button", data: { :confirm => 'Are you sure?' }}</li>
+              <li>#{link_to 'Destroy', @page, :method => :delete, class: "button alert", data: { :confirm => 'Are you sure?' }}</li>
             </ul>
           <nav>
       HTML

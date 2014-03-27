@@ -1,26 +1,14 @@
-%h1= t('blog.blog')
+%ul.breadcrumbs
+  %li= link_to t('home'), root_path
+
+%h1= t('blogs.blog')
+= link_to 'New Blog Page', new_page_path if user_signed_in? 
 %hr
-
-%table
-  %tr
-    %th Name
-    %th Permalink
-    %th Image
-    %th Content
-    %th
-    %th
-    %th
-
-  - @blogs.each do |blog|
-    %tr
-      %td= blog.name
-      %td= blog.permalink
-      %td= blog.image
-      %td= blog.content
-      %td= link_to 'Show', blog
-      %td= link_to 'Edit', edit_blog_path(blog)
-      %td= link_to 'Destroy', blog, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Blog', new_blog_path
+- @blogs.each do |blog|
+  %article
+    %header
+      %h3= link_to blog.name, blog_path(blog)
+    %p= truncate_html blog.content, length: 500
+    %p= blog.updated_at
+    %p= link_to 'Read more', blog_path(blog), class: 'button tiny radius'
+    %p= link_to 'Edit', edit_blog_path(blog) if user_signed_in?

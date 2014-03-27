@@ -31,4 +31,5 @@
         %li.divider
         %li.has-form
           = link_to t('jumpproject'), new_message_path(type_website: "Startup"), class: "button success tiny radius", id: 'kick'
-        = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button tiny radius" if user_signed_in?
+        
+        = link_to "<i class='fi-power'></i>".html_safe, destroy_user_session_path, :method => :delete, class: "button tiny radius alert power" if user_signed_in?
