@@ -8,7 +8,7 @@
   %article
     %header
       %h3= link_to blog.name, blog_path(blog)
-    %p= truncate_html blog.content, length: 500
+    %p= truncate_html (markdown blog.content), length: 500
     %p= blog.updated_at
     %p= link_to 'Read more', blog_path(blog), class: 'button tiny radius'
     %p= link_to 'Edit', edit_blog_path(blog) if user_signed_in?
