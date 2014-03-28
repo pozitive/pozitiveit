@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.with_translations(I18n.locale).all
+    @blogs = Blog.with_translations(I18n.locale)
   end
 
   # GET /blogs/1
