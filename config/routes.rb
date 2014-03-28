@@ -9,7 +9,7 @@ Pozitive::Application.routes.draw do
   get '/ru/pages/how-to-get-to-baidu' => redirect('/ru/blogs/how-to-get-to-baidu')
   get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/ru/blogs/promotion-in-the-chinese-internet')
 
-  get '/en/pages/benefits_of_multilingual_seo' => redirect('/en/pages/benefits_of_multilingual_seo')
+  get '/en/pages/benefits_of_multilingual_seo' => redirect('/en/blogs/benefits_of_multilingual_seo')
 
   scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
     resources :pages
