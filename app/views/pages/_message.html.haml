@@ -5,7 +5,6 @@
       %ul
         - @message.errors.full_messages.each do |msg|
           %li= msg
-
   #message
     .row
       #name.small-12.columns
@@ -18,4 +17,4 @@
         %label= t('form.message')
         = f.text_area :message, {required: '', placeholder: "Write your message here..."}
       #send_button.small-12.columns
-        = f.submit t('form.send'), class: 'button success'
+        = f.submit t('form.send'), class: 'button alert'
