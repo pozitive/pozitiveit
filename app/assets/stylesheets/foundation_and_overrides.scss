@@ -1410,7 +1410,11 @@ button.basic {
 	margin-top: rem-calc(50);
     }
 }
-
+.editblog {
+    textarea {
+	min-height: 30em;
+    }
+}
 // Web services
 .webservices {
     margin: rem-calc(70) auto rem-calc(30);

@@ -37,7 +37,7 @@ module ApplicationHelper
 
   def meta_description(description = nil)
     if description.present?
-      content_for :meta_description, tags
+      content_for :meta_description, description
     else
       content_for?(:meta_description) ? content_for(:meta_description) : APP_CONFIG['default_description']
     end
