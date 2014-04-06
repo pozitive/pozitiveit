@@ -18,4 +18,29 @@ module ApplicationHelper
     
     markdown.render(text).html_safe
   end
+
+  def title(title = nil)
+    if title.present?
+      content_for :title, title
+    else
+      content_for?(:title) ? content_for(:title) + ' | Pozitive' : APP_CONFIG['default_title']
+    end
+  end
+
+  def meta_keywords(tags = nil)
+    if tags.present?
+      content_for :meta_keywords, tags
+    else
+      content_for?(:meta_keywords) ? content_for(:meta_keywords) : APP_CONFIG['default_keywords']
+    end
+  end
+
+  def meta_description(description = nil)
+    if description.present?
+      content_for :meta_description, tags
+    else
+      content_for?(:meta_description) ? content_for(:meta_description) : APP_CONFIG['default_description']
+    end
+  end
+
 end
