@@ -12,10 +12,12 @@
     = csrf_meta_tags
   %body
     = render "layouts/topbar"
+    = yield :top
     %main#content
       .row
         .columns.small-12
           = yield
+    = yield :bottom
 
     = render "layouts/footer"
     = render "layouts/analytics"

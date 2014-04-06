@@ -2,7 +2,6 @@ class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
   helper :all
-  layout "main", :only => [:welcome]
 
   # GET /pages
   # GET /pages.json
