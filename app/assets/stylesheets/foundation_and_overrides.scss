@@ -1409,12 +1409,22 @@ button.basic {
     .button-bar {
 	margin-top: rem-calc(50);
     }
+    .main-image {
+	margin-bottom: rem-calc(30);
+    }
 }
 .editblog {
     textarea {
 	min-height: 30em;
     }
 }
+.social {
+    margin: rem-calc(20) auto;
+}
+.manage {
+    margin: rem-calc(20) auto;
+}
+
 // Web services
 .webservices {
     margin: rem-calc(70) auto rem-calc(30);
