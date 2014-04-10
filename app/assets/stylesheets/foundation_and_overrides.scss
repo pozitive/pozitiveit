@@ -1067,7 +1067,7 @@ $color-bg: #F4F6F8;
 .intro {
     height: 320px;
     background-color: #0E3B5A;
-    background-image: image-url("hk/hk_1920.jpg");
+    background-image: image-url("hk/hk_640.jpg");
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1409,11 +1409,25 @@ button.basic {
     .button-bar {
 	margin-top: rem-calc(50);
     }
+    .main-image {
+	margin-bottom: rem-calc(30);
+    }
+}
+.editblog {
+    textarea {
+	min-height: 30em;
+    }
+}
+.social {
+    margin: rem-calc(20) auto;
+}
+.manage {
+    margin: rem-calc(20) auto;
 }
 
 // Web services
 .webservices {
-    margin: rem-calc(100) 0;
+    margin: rem-calc(70) auto rem-calc(30);
     i {
 	color: hsl(0, 100%, 50%);
 	margin-righ: rem-cacl(20);
@@ -1430,8 +1444,15 @@ button.basic {
 @media only screen and (min-width: 40.063em) {
     .intro {
 	height: 600px;
+	background-image: image-url("hk/hk_1200.jpg");
 	.motivation {
 	    padding-top: rem-calc(40);
+	}
+	h1 {
+	    font-size: rem-calc(70);
+	}
+	p {
+	    font-size: rem-calc(18);
 	}
     }
     .hireus {
@@ -1449,6 +1470,7 @@ button.basic {
 	margin: rem-calc(30) 0 rem-calc(200);
     }
     .intro {
+	background-image: image-url("hk/hk_1920.jpg");
 	h1 {
 	    font-size: rem-calc(100);
 	}

@@ -18,6 +18,11 @@ gem 'devise'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
 gem 'redcarpet'
+gem 'metamagic'
+gem 'mini_magick'
+gem 'carrierwave'
+gem 'fog'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

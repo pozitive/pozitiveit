@@ -56,9 +56,9 @@ en:
     request: 'REQUEST'
   price:
     mobile: 'Mobile Friendly'
-    singlepage: 'Single-page Application'
+    singlepage: 'Single page'
     multilingual: 'Multilingual Website'
-    support: 'Professional Support / Hosting'
+    support: 'Professional Support'
     interactive: 'Interactive Website'
   Menu: 'Menu'
   pages:

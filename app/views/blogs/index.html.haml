@@ -6,9 +6,19 @@
 %hr
 - @blogs.each do |blog|
   %article
-    %header
-      %h3= link_to blog.name, blog_path(blog)
-    %p= truncate_html (markdown blog.content), length: 500
-    %p= blog.updated_at
-    %p= link_to 'Read more', blog_path(blog), class: 'button tiny radius'
-    %p= link_to 'Edit', edit_blog_path(blog) if user_signed_in?
+    .row
+      .columns.small-12
+        %header
+          %h3= link_to blog.name, blog_path(blog)
+    .row
+      .columns.large-5
+        = link_to (image_tag blog.image_url(:large).to_s), blog.image_url
+      .columns.large-7
+        %p= truncate_html (markdown blog.content), length: 500
+    .row
+      .columns.small-12
+        %p= blog.updated_at
+    .row
+      .columns.large-12
+        %p= link_to 'Read more', blog_path(blog), class: 'button tiny radius'
+        %p= link_to 'Edit', edit_blog_path(blog) if user_signed_in?

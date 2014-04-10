@@ -9,6 +9,8 @@ Pozitive::Application.routes.draw do
   get '/ru/pages/how-to-get-to-baidu' => redirect('/ru/blogs/how-to-get-to-baidu')
   get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/ru/blogs/promotion-in-the-chinese-internet')
 
+  get '/en/pages/benefits_of_multilingual_seo' => redirect('/en/blogs/benefits_of_multilingual_seo')
+
   scope "(:locale)", :constraints => {:locale => /#{I18n.available_locales.join("|")}/} do
     resources :pages
     resources :messages
@@ -21,6 +23,7 @@ Pozitive::Application.routes.draw do
     devise_for :users
   end
 
+  get 'sitemap.xml' => 'sitemap#index', as:'sitemap', defaults: {format: 'xml'}
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
