@@ -10,7 +10,9 @@ Pozitive::Application.routes.draw do
   get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/blogs/promotion-in-the-chinese-internet')
   get '/en/pages/benefits_of_multilingual_seo' => redirect('/blogs/benefits_of_multilingual_seo')
   get '/en/:article' => redirect('/%{article}')
+  get '/en/:blog/:article' => redirect('/%{blog}/%{article}')
   get '/ru/:article' => redirect('/%{article}')
+  get '/ru/:blog/:article' => redirect('/%{blog}/%{article}')
 
   resources :pages
   resources :messages
