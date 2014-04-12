@@ -9,7 +9,8 @@ Pozitive::Application.routes.draw do
   get '/ru/pages/how-to-get-to-baidu' => redirect('/blogs/how-to-get-to-baidu')
   get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/blogs/promotion-in-the-chinese-internet')
   get '/en/pages/benefits_of_multilingual_seo' => redirect('/blogs/benefits_of_multilingual_seo')
-  get '/en/:id' => redirect('/:id'), :status => :moved_permanently
+  get '/en/:article' => redirect('/%{article}')
+  get '/ru/:article' => redirect('/%{article}')
 
   resources :pages
   resources :messages
