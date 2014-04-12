@@ -1,15 +1,15 @@
 Pozitive::Application.routes.draw do
 
   # redirect from pages to blog
-  get "/ru/pages/create-and-seo-website-on-chinese-language"  => redirect("/ru/blogs/create-and-seo-website-on-chinese-language")
-  get '/ru/pages/create-website-on-chinese-language' => redirect('/ru/blogs/create-website-on-chinese-language')
-  get '/ru/pages/design-on-chinese-language' => redirect('/ru/blogs/design-on-chinese-language')
-  get '/ru/pages/faq' => redirect('/ru/blogs/faq')
-  get '/ru/pages/advertising-baidu' => redirect('/ru/blogs/advertising-baidu')
-  get '/ru/pages/how-to-get-to-baidu' => redirect('/ru/blogs/how-to-get-to-baidu')
-  get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/ru/blogs/promotion-in-the-chinese-internet')
-
-  get '/en/pages/benefits_of_multilingual_seo' => redirect('/en/blogs/benefits_of_multilingual_seo')
+  get "/ru/pages/create-and-seo-website-on-chinese-language"  => redirect("/blogs/create-and-seo-website-on-chinese-language")
+  get '/ru/pages/create-website-on-chinese-language' => redirect('/blogs/create-website-on-chinese-language')
+  get '/ru/pages/design-on-chinese-language' => redirect('/blogs/design-on-chinese-language')
+  get '/ru/pages/faq' => redirect('/blogs/faq')
+  get '/ru/pages/advertising-baidu' => redirect('/blogs/advertising-baidu')
+  get '/ru/pages/how-to-get-to-baidu' => redirect('/blogs/how-to-get-to-baidu')
+  get '/ru/pages/promotion-in-the-chinese-internet' => redirect('/blogs/promotion-in-the-chinese-internet')
+  get '/en/pages/benefits_of_multilingual_seo' => redirect('/blogs/benefits_of_multilingual_seo')
+  get '/en/:id' => redirect('/:id'), :status => :moved_permanently
 
   resources :pages
   resources :messages
