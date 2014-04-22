@@ -74,7 +74,7 @@ namespace :deploy do
       execute "ln -nfs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
     end
   end
-  before "deploy:assets:precompile", "deploy:post_symlink"
+  before "deploy:assets:precompile", "deploy:setup_config"
 
   task :symlink_config do
     on roles(:app) do
