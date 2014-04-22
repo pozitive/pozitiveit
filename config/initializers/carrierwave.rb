@@ -1,8 +1,8 @@
 CarrierWave.configure do |config|
   config.fog_credentials = {
     provider: "AWS",
-    aws_access_key_id: Figaro.env.carrierwave_aws_access_key_id!,
-    aws_secret_access_key: Figaro.env.carrierwave_aws_secret_access_key!
+    aws_access_key_id: "AWS_ACCESS_KEY_ID",
+    aws_secret_access_key: "AWS_SECRET_ACCESS_KEY"
   }
-  config.fog_directory = Figaro.env.carrierwave_aws_s3_bucket!
+  config.fog_directory = "AWS_S3_BUCKET"
 end
