@@ -12,7 +12,6 @@ gem 'rails_12factor', group: :production
 gem "haml-rails"
 gem 'compass-rails', github: "Compass/compass-rails"
 gem 'foundation-rails', github: "zurb/foundation-rails"
-gem 'globalize', '~> 4.0.0.alpha.2'
 gem 'figaro'
 gem 'devise'
 gem 'truncate_html'

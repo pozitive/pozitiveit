@@ -1,12 +1,11 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-  before_action :show_blog, only: :show
   before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
 
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.with_translations(I18n.locale)
+    @blogs = Blog.all
   end
 
   # GET /blogs/1
@@ -66,10 +65,6 @@ class BlogsController < ApplicationController
   private
     def not_found
       raise ActionController::RoutingError.new('Not Found')
-    end
-    # Use callbacks to share common setup or constraints between actions.
-    def show_blog
-      @blog = Blog.with_translations(I18n.locale).find_by_permalink(params[:id]) || not_found
     end
 
     def set_blog
