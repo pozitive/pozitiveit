@@ -149,9 +149,6 @@ GEM
     fssm (0.2.10)
     gherkin (2.12.2)
       multi_json (~> 1.3)
-    globalize (4.0.0)
-      activemodel (>= 4.0.0, < 5)
-      activerecord (>= 4.0.0, < 5)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -310,7 +307,6 @@ DEPENDENCIES
   fog
   foundation-icons-sass-rails
   foundation-rails!
-  globalize (~> 4.0.0.alpha.2)
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
