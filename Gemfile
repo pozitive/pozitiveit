@@ -22,6 +22,7 @@ gem 'metamagic'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'fog'
+gem 'cloudinary'
 gem 'unicorn' # Use unicorn as the app server
 gem 'capistrano', group: :development # Use Capistrano for deployment
 gem 'capistrano-rbenv'
