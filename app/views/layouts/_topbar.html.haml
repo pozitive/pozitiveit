@@ -9,18 +9,7 @@
           %span MENU
     %section.top-bar-section
       %ul#navbar.right
-        %li.divider
-        %li= link_to t('home'), root_path
-        %li.divider
-        %li= link_to t('services'), services_path
-        %li.divider
-        %li= link_to t('works'), portfolio_path
-        %li.divider
-        %li= link_to t('process'), page_path(Page.find_by_permalink('our-process'))
-        %li.divider
-        %li= link_to t('about-us'), about_us_path
-        %li.divider
-        %li= link_to t('contact'), contact_us_path
+        = render "layouts/menu"
         %li.divider
         %li.has-dropdown
           = link_to "LANGUAGES", locale: "en"

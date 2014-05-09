@@ -21,6 +21,7 @@ Pozitive::Application.routes.draw do
   get 'portfolio' => 'pages#portfolio'
   get 'about_us' => 'pages#aboutus'
   get 'contact_us' => 'pages#contactus'
+  get 'our_process' => 'pages#our_process'
   root to: 'pages#welcome'
   devise_for :users
 
