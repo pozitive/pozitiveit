@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!, only: [:create, :new, :edit, :update, :destroy]
+  before_filter :authenticate_admin!, only: [:create, :new, :edit, :update, :destroy]
   helper :all
 
   # GET /pages

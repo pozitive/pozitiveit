@@ -23,7 +23,7 @@ module PagesHelper
   end
 
   def manage_page
-    if user_signed_in?
+    if admin_signed_in?
       raw <<-HTML
           <nav class="button-bar">
             <ul class="button-group radius">
