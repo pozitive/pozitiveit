@@ -17,6 +17,12 @@
     = markdown @blog.try(:content)
 
 .row
+  .columns.author
+    = @blog.admin.email
+    = @blog.admin.name 
+    = @blog.admin.bio
+
+.row
   .columns.social
     .social-likes
       .facebook{title: "Share link on Facebook"} Facebook
