@@ -15,6 +15,7 @@ gem 'foundation-rails', github: "zurb/foundation-rails"
 gem 'globalize', '~> 4.0.0.alpha.2'
 gem 'figaro'
 gem 'devise'
+gem 'omniauth-facebook'
 gem 'truncate_html'
 gem 'foundation-icons-sass-rails'
 gem 'redcarpet'

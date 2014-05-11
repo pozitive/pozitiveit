@@ -10,19 +10,24 @@
     %div
       Currently waiting confirmation for: #{resource.unconfirmed_email}
   %div
-    = f.label :password
-    %i (leave blank if you don't want to change it)
+    = f.label :name
     %br/
-    = f.password_field :password, autocomplete: "off"
-  %div
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
-  %div
-    = f.label :current_password
-    %i (we need your current password to confirm your changes)
-    %br/
-    = f.password_field :current_password, autocomplete: "off"
+    = f.text_field :name
+  - if f.object.password_required?
+    %div
+      = f.label :password
+      %i (leave blank if you don't want to change it)
+      %br/
+      = f.password_field :password, autocomplete: "off"
+    %div
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation, autocomplete: "off"
+    %div
+      = f.label :current_password
+      %i (we need your current password to confirm your changes)
+      %br/
+      = f.password_field :current_password, autocomplete: "off"
   %div= f.submit "Update"
 %h3 Cancel my account
 %p

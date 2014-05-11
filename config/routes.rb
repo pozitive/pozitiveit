@@ -23,7 +23,7 @@ Pozitive::Application.routes.draw do
   get 'contact_us' => 'pages#contactus'
   get 'our_process' => 'pages#our_process'
   root to: 'pages#welcome'
-  devise_for :users
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
   devise_for :admins, :skip => [:registrations] 
   as :admin do
     get 'admins/edit' => 'admins/registrations#edit', :as => 'edit_admin_registration'
