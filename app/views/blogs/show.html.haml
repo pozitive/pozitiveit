@@ -3,8 +3,8 @@
   = tag :meta, property: "og:site_name", content: "Pozitive"
   = tag :meta, property: "og:type", content: "pozitive:blog"
   = tag :meta, property: "og:url", content: blog_url(@blog)
-  = tag :meta, property: "og:image", content: @blog.image_url
-  = tag :meta, property: "og:description", content: @blog.summary
+  = tag :meta, property: "og:image", content: @blog.image_url || image_url("logo_75.png")
+  = tag :meta, property: "og:description", content: @blog.summary if @blog.summary
 
 - title @blog.name
 - meta_keywords @blog.keyword
@@ -33,6 +33,10 @@
         %li
           %h3= @blog.admin.name 
       %p= @blog.admin.bio
+      %hr
+.row
+  .columns
+    .fb-comments{data: { href: "http://localhost:3000/comments", numposts: "5", colorscheme: "light"}}
 
 .row
   .columns.social
