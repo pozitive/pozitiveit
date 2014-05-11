@@ -16,11 +16,15 @@
           %li= link_to (image_tag @blog.image_url(:large).to_s), @blog.image_url
     = markdown @blog.try(:content)
 
-.row
-  .columns.author
-    = @blog.admin.email
-    = @blog.admin.name 
-    = @blog.admin.bio
+- if @blog.admin.present? 
+  .row
+    .columns.large-6.medium-8.small-12
+      %hr
+      %ul.inline-list
+        %li= image_tag avatar_url(@blog.admin)
+        %li
+          %h3= @blog.admin.name 
+      %p= @blog.admin.bio
 
 .row
   .columns.social
