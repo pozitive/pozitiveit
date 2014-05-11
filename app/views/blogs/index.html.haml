@@ -23,7 +23,7 @@
             %p= truncate_html (markdown blog.content), length: 500
     .row
       .columns.small-12
-        %p= blog.updated_at
+        %p= blog.created_at
     .row
       .columns.large-12
         %p= link_to 'Read more', blog_path(blog), class: 'button tiny radius'
