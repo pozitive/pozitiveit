@@ -11,7 +11,7 @@
     .row
       - if blog.image.present?
         .columns.large-5
-          = link_to (image_tag blog.image_url(:large).to_s), blog.image_url 
+          = link_to (image_tag blog.image_url(:thumb).to_s), blog.image_url 
         .columns.large-7
           %header
             %h3= link_to blog.name, blog_path(blog)
