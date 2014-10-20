@@ -51,5 +51,6 @@ group :development, :test do
   gem 'rspec-rails' #unit testing
   gem 'debugger'  # Use debugger
   gem 'colored'
+  gem 'pry'
 end
 

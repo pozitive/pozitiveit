@@ -28,17 +28,21 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
-    @message = Message.new(message_params)
+    if message_params["bot"].empty?
+      @message = Message.new(message_params)
 
-    respond_to do |format|
-      if @message.save
-        MessageMailer.contact_form(@message).deliver
-        format.html { redirect_to @message, notice: 'Message was successfully sent.' }
-        format.json { render action: 'show', status: :created, location: @message }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @message.errors, status: :unprocessable_entity }
+      respond_to do |format|
+        if @message.save
+          MessageMailer.contact_form(@message).deliver
+          format.html { redirect_to @message, notice: 'Message was successfully sent.' }
+          format.json { render action: 'show', status: :created, location: @message }
+        else
+          format.html { render action: 'new' }
+          format.json { render json: @message.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      render action: 'bot'
     end
   end
 
@@ -74,6 +78,6 @@ class MessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.require(:message).permit(:name, :phone, :email, :company, :idea, :message, :extra, :type_website)
+      params.require(:message).permit(:name, :phone, :email, :company, :idea, :message, :extra, :type_website, :bot)
     end
 end
